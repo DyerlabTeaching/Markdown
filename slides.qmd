@@ -1,10 +1,14 @@
 ---
-title: "Topic Title"
-subtitle: "Witty Commentary"
+title: "Markdown"
+subtitle: "One Document to Rule them All"
 author: Rodney J. Dyer
 format: revealjs
 editor: visual
 ---
+
+```{r setup, include=FALSE}
+if( !require(quarto) ) { install.packages("quarto") }
+```
 
 ## Quarto
 
