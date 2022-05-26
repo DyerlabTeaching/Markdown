@@ -4,7 +4,7 @@ subtitle: "Efficient Data Communication"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: [envs543-styles.css, middlebury, middlebury-fonts]
+    css: [media/envs543-styles.css, middlebury, middlebury-fonts]
     seal: false
     nature:
       titleSlideClass: ["center","middle"]
@@ -15,7 +15,7 @@ output:
 ---
 
 class: left, bottom
-background-image: url("images/contour.png")
+background-image: url("media/contour.png")
 background-position: right
 background-size: auto
 
@@ -38,7 +38,7 @@ library(kableExtra)
 
 <p>&nbsp;</p>
 
-<img src="images/logo1.svg" width="400px">
+<img src="media/logo1.svg" width="400px">
 
 ---
 
