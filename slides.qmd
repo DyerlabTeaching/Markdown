@@ -1,13 +1,14 @@
 ---
 title: "Markdown"
 subtitle: "One Document to Rule them All"
-author: Rodney J. Dyer
-format: revealjs
+format: 
+  revealjs:
+    title-slide-attributes: 
+      data-background-image: media/title_page.gif
+      data-background-size: 40%
+      data-background-position: 134% 100%
 editor: visual
 ---
-
-
-
 
 ```{r setup, include=FALSE}
 if( !require(quarto) ) { install.packages("quarto") }
