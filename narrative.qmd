@@ -161,7 +161,7 @@ See the reference guide for several more options you can put into the header of 
 There are some very *fundamental* issues regarding chunks, the `R` environment, and documents that should be pointed out here.
 
 1.  The `R` environment (see tab labeled **Environment** in the RStudio interface) has all the variables and new functions that you have created listed and available for use.
-2.  An `R` Markdown document is not a 'living' environment. If you make a change in a chunk, you *must* rerun that chunk to have the output available and inserted into the **Environment**. It does not do it automagically.
+2.  An `R` Markdown document is not a 'living' environment. If you make a change in a chunk, you *must* rerun that chunk to have the output available and inserted into the **Environment**. It does not do it *automagically*.
 3.  When you knit a document, the **only** data it has is what is actually in the document itself. It does not look to the general **Environment** for variables and functions. This means that if you create a variable or load data using the Console and then reference it in the Document, it will fail when you try to knit the document.
 4.  All the code and variables in a document (if they are not within a chunk with `eval=FALSE`) is visible to everything in the document below where it was defined.\
 5.  Chunks are evaluated from the top of the document to the bottom of the document.\
@@ -241,9 +241,8 @@ We will not be using notebooks in the class either.
 
 -   Create dynamic content with [Python](https://quarto.org/docs/computations/python.html), [R](https://quarto.org/docs/computations/r.html), [Julia](https://quarto.org/docs/computations/julia.html), and [Observable](https://quarto.org/docs/computations/ojs.html).
 
-```{=html}
 <!-- -->
-```
+
 -   Author documents as plain text markdown or [Jupyter](https://jupyter.org/) notebooks.
 
 -   Publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
