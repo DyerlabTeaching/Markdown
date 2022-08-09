@@ -1,8 +1,10 @@
 ---
-title: "Markdown & Notebooks"
-output: 
-  html_notebook:
-    css: ["media/narrative_style.css"]
+title: "Markdown"
+author: Rodney Dyer
+date: today
+format: 
+  html:
+    echo: false 
 ---
 
 > Markdown & Notebooks provide interactive documents for more effective data communication
@@ -98,9 +100,9 @@ Will be turned into an unordered list as:
 
 Whereas the following raw text.[^1]
 
-&#48;&#46; First  
+&#49;&#46; First  
 &#49;&#46; Second  
-&#50;&#46; Third  
+&#49;&#46; Third  
 
 Will be rendered in list format as:
 
@@ -108,9 +110,7 @@ Will be rendered in list format as:
 1. Second   
 1. Third
 
-Actually, you *can* just use `1.` in front of every line if you like, it will auto-number them for you when it makes a list.  Helpful if you are making a numbered list that you are moving things around in.
-
-
+Actually, you *can* just use `1.` in front of every line if you like, it will auto-number them for you when it makes a list.  I tend to do this because it makes it a bit easier in case I want to reorder the list later and I don't have to go back and change the numbers.  
 
 
 ## Code & Text
