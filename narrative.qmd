@@ -2,9 +2,6 @@
 title: "Markdown"
 author: Rodney Dyer
 date: today
-format: 
-  html:
-    echo: false 
 ---
 
 > Markdown & Notebooks provide interactive documents for more effective data communication
@@ -29,7 +26,12 @@ This is critical for us because Code is just text.  Once it is evaluated, it can
 
 As such, we can embed R code within raw text to create our analyses and documents.  
 
-# Markdown
+# Installing Quarto for Markdown
+
+The first step is to go to [quarto](https://quarto.org) and download the quarto engine for your particular laptop.
+
+
+# Markdown Syntax
 
 For maximum usability, the document that we embed our code into should be as widely available as possible—unhindered by the necessity of having a particular program just to view the content.   For this, R uses [Markdown](https://en.wikipedia.org/wiki/Markdown), created by John Gruber & Aaron Swartz in 2004.  Markdown was created so that people are enabled "...to write using an easy-to-read and easy-to-write plain text format..."
 
@@ -217,18 +219,6 @@ Surrounding the markdown document are several components of the RStudio IDE that
 ![The document structure menu at the bottom left of the window shows you the structure of the document you are making based upon headers and sections within it.](https://live.staticflickr.com/65535/50162837377_0e748c69b0_o_d.png)
 
 
-
-### R Notebooks
-
-An `R Notebook` is a special kind of Markdown document, which we will be using in this class.  It adds *a bit* of interactivity to the normal Markdown documents.  The differences are:  
-
-1. Instead of a *Knit* button at the top of the page, there is a *Preview* button.  
-1. Every time you save the document, an HTML version of the document will be rendered in the **Viewer** tab of the RStudio interface.  
-1. The output of code chunks within the **Viewer** for the document will show exactly the same output as is rendered in the raw markdown document.  This means if you have code and the output has not been run, it will not show that in the **Viewer**.
-1. You can show and hide all the code in a notebook using the button at the top of the page or on a per-chunk basis.
-1. The HTML output of the notebook also contains *a copy of the rmd file* within it.  This means that we can post a notebook online and a viewer can download the raw markdown for that document to their own computer and run it (at the top right of this very document is a button that has an option to *Download Rmd*).
-
-For these reasons, we will be using notebooks for this class.  
 
 
 
