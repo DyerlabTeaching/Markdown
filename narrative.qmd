@@ -89,7 +89,7 @@ You can also embed links and images. Both of these are configured in two parts. 
 
 Lists (both numbered and unordered) are created using dashes or asterisks.
 
-\- Bullet 1\
+- Bullet 1\
 - Bullet 2\
 - Bullet 3
 
