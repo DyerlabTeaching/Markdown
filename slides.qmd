@@ -8,15 +8,12 @@ format:
     theme: default
     logo: "media/ces_logo.png"
     chalkboard: true
-editor: visual
+editor: source
 title-slide-attributes: 
   data-background-image: "media/contour.png"
   data-background-position: "right"
   data-background-size: initial
 ---
-
-
-
 
 # Quarto {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
@@ -25,13 +22,13 @@ title-slide-attributes:
 > Quarto is an open-source *document creation system* based upon a tool called [Pandoc](https://pandoc.org/).
 
 ::: {.fragment .fade-in}
-These tools allow you to weave together, raw data, analysis code, analysis output, graphics, and interactive elements into a single document that can be turned into a wide variety of products.  
+These tools allow you to weave together, raw data, analysis code, analysis output, graphics, and interactive elements into a single document that can be turned into a wide variety of products.
 :::
 
-
-::: {fragment .fade-in}
-This means that you do not have to copy-paste from analysis -> Excel -> Word -> Powerpoint -> etc.
+::: {.fragment .fade-in}
+This means that you do not have to copy-paste from analysis -> Excel -> Word -> Powerpoint -> etc. 
 :::
+
 
 ## Implementation != Interface
 
@@ -43,7 +40,7 @@ This means that you do not have to copy-paste from analysis -> Excel -> Word -> 
 
 ## Interface Agnostic
 
-::: {.r-stack}
+::: r-stack
 ![](media/rstudio-preview.png){.fragment}
 
 ![](media/jupyterlab-preview.png){.fragment}
@@ -51,22 +48,20 @@ This means that you do not have to copy-paste from analysis -> Excel -> Word -> 
 ![](media/python-vscode.png){.fragment}
 :::
 
-
 ## So what is Quarto?
 
 > Quarto is an open source scientific and technical publishing system.
 
-- HTML reports, blogs, and websites.  
-- PDF & Word documents.  
-- Presentations (Powerpoint, Beamer, revealjs).  
-- Technical Books & Journal Articles.  
-- Dashboards.
-- Projects.
-
+-   HTML reports, blogs, and websites.\
+-   PDF & Word documents.\
+-   Presentations (Powerpoint, Beamer, revealjs).\
+-   Technical Books & Journal Articles.\
+-   Dashboards.
+-   Projects.
 
 ## Quarto Document Creation in RStudio
 
-::: {.r-stack}
+::: r-stack
 ![](media/qmd_doc.png){.fragment}
 
 ![](media/qmd_presentation.png){.fragment}
@@ -74,24 +69,81 @@ This means that you do not have to copy-paste from analysis -> Excel -> Word -> 
 ![](media/qmd_interactive.png){.fragment}
 :::
 
-
-
-
-
 # Markdown {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
-
 
 ## Mardown is Text
 
 ![](media/qmd_raw.png)
 
+## Your Turn 🫵
 
-# Your Turn 
+- Open up RStudio on your computer.    
+- Create a Quarto Word Document.   
+- Render the document.  
+- Add `theme: sketchy` to the YAML.
+- Change to `format: html` in the YAML.
+
+&nbsp;
+
+```{r}
+countdown::countdown(minutes=5, seconds=0, top=0, font_size = "1em") 
+```
 
 
-https://rstudio-conf-2022.github.io/get-started-quarto/materials/01-intro-quarto.html#/our-turn-1
+
+## YAML
+
+YAML (Yet Another Markdown Language) is a method of setting meta-data for the whole document. 
+ 
+- It **must** be at the top of the document.  
+
+- It is *delimited* by three dashes, one set above and one below.
 
 
-- Open up RStudio on your computer  
-- Create 
+## Markdown
+
+Markdown is a method to typeset *text* using only keyboard commands.  Plain text is displayed as body styled texts.  
+
+Markdown              | Result   
+----------------------|-------------  
+\*italic\*            |  *italic*  
+\*\*bold\*\*          |  **bold**   
+\~\~strikethrough\~\~ | ~~strikethrough~~
+
+
+## Unordered Lists
+
+Lists are manually created using either dashes or numbers.  
+
+&nbsp;
+
+In Markdown, this:  
+
+\- This item  
+\- That item  
+
+&nbsp;
+
+Is rendered as: 
+
+- This item  
+- That item   
+
+
+## Image & Links
+
+URL's can be used to include both to webpages and images (either online or as a path relative to the document you are making on the computer).  
+
+
+
+| Markdown                          | Rendered As                         |
+|-----------------------------------|-------------------------------------|
+| \[CES\](https://ces.vcu.edu)      | [CES](https://ces.vcu.edu)          |
+| !\[Goat\](media/goat.jpg) | ![alt text](media/goat.jpg) |
+
+
+
+
+<!-- https://rstudio-conf-2022.github.io/get-started-quarto/materials/01-intro-quarto.html#/anatomy-of-a-quarto-document  -->
+
 
