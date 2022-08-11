@@ -1,7 +1,6 @@
 ---
 title: "Markdown"
 author: Rodney Dyer
-date: today
 ---
 
 > Markdown & Notebooks provide interactive documents for more effective data communication
@@ -126,7 +125,7 @@ You can easily integrate code, into the text, either to be displayed *OR* to be 
 
 If you look at the RMarkdown for that paragraph above, it looks like the following before knitting:
 
-``` R
+``` r
 You can easily integrate code, into the text, either to be displayed *OR* to be evaluated.  For example, in `R` you get the value of $\pi$ by the constant `pi`. Type that into the console and it will return `r pi`.
 ```
 
@@ -175,40 +174,4 @@ There are some very *fundamental* issues regarding chunks, the `R` environment, 
 
 ![Option buttons for each chunk include a quick menu for optoins (gear), the ability to run all the chunks above this one (triangle and line button in the middle), and run this particular chunk (play button).](https://live.staticflickr.com/65535/50162130773_86f545cb28_c_d.jpg)
 
-## Document Types
-
-RMarkdown can be converted easily into a variety of document types. Let's take a look at how the base Markdown document can be converted into a wide variety of output types.
-
-### RMarkdown Document
-
-In RStudio, select *File* $\to$ New File $\to$ R Markdown... and you should see the following dialog.
-
-![New R Markdown Dialog from RStudio](https://live.staticflickr.com/65535/50159543217_2ff02834cb_c_d.jpg)
-
-For most of this class, we will be using HTML output. This creates a stand-alone document, with all the content embedded within it as a self-contained HTML web page. This is preferable at this point because it we will be working with interactive graphics, included maps, overlays, graphics, dynamic data tables, etc. None of these components can be embedded within PDF or Word documents, though you could take a picture of them and use that... But that would defeat the purpose and utility of interactive graphics and output now wouldn't it?
-
-The raw document in RStudio looks like this:
-
-![Base R Markdown](https://live.staticflickr.com/65535/50159564677_b1839ba410_c_d.jpg) There are a couple different parts to this document itself that need to be highlighted.
-
-1.  *The meta data:* The part at the top of the document, lines 1-6, are meta data that summarize the document and specify how it would be converted into a final document. The process of converting the markdown to a final document type is called *knitting* (and there is a *knit* button above the document). For manuscripts and web pages and presentations, the values of title author and date are used for the top of the document.
-
-2.  *Code Chunks:* Raw code (R or other languages) that is to be evaluated when we knit the document is enclosed within *chunks*. These chunks are delimited by three back ticks (the tick is found on the key just to the left of the '1' key on English (USA) keyboards). The first and last line **must** have these three ticks and *everything* contained within them will be evaluated as `R` code when you knit the document.
-
-3.  *Chunk Options:* On the first line of each code chunk, there is a curly bracket with `r` and potentially other items within it. The `r` specifies that the code will be `R` code and the other components are either an alias to for the chunk (e.g., the `setup`, `cars` and `pressure` on lines 8, 18 & 26) or options that apply to the overall chunk (the rest of the stuff between the curly brackets on the same lines). The names allow you to refer to the chunk from the text (such as referencing a Figure whose number will be automatically determined when knit) and the options allow you to determine the behavior of the chunk (figure size, orientation, showing, evaluating, suppressing warnings, etc.).
-
-### RStudio Interface Components
-
-Surrounding the markdown document are several components of the RStudio IDE that help you be more productive. Here is a quick tour.
-
-![The Knit button at the top left of the window allows you to knit the docuemnt into different output types. This will default to the kind of document you selected in the original document dialog. If you change it, the value in the markdown meta data after `output` will change between `html_document`, `pdf_document`, and `word_document`.](https://live.staticflickr.com/65535/50162051523_97b229c6a0_o_d.png)
-
-![In addition to R code, the insert menu on the top right of the interface lets you insert a chunk for `R` and some other programming languages. Mostly in this class, we will focus on `R` code and there is a keyboard shortcut to insert a chunk.](https://live.staticflickr.com/65535/50162837317_f48f6a369c_o_d.png)
-
-![The Run menu allows you to execute code within the document at various levels of specificity. At the most granular, you can run the current line of code that the cursor is sitting on. Above that, you can run chunks individually or as a group.](https://live.staticflickr.com/65535/50162589701_ac265c4e2d_o_d.png)
-
-::: box-red
-Please go back and read about code chunks and restrictions within documents (above).
-:::
-
-![The document structure menu at the bottom left of the window shows you the structure of the document you are making based upon headers and sections within it.](https://live.staticflickr.com/65535/50162837377_0e748c69b0_o_d.png)
+## 
