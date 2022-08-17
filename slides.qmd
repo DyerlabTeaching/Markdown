@@ -1,5 +1,5 @@
 ---
-title: "Markdown & Quarto"
+title: "Markdown"
 subtitle: "&nbsp;"
 author: Rodney Dyer, PhD
 format: 
@@ -15,73 +15,26 @@ title-slide-attributes:
   data-background-size: initial
 ---
 
-# Quarto {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
-
-## Hello Quarto
-
-> Quarto is an open-source *document creation system* based upon a tool called [Pandoc](https://pandoc.org/).
-
-::: {.fragment .fade-in}
-These tools allow you to weave together, raw data, analysis code, analysis output, graphics, and interactive elements into a single document that can be turned into a wide variety of products.
-:::
-
-::: {.fragment .fade-in}
-This means that you do not have to copy-paste from analysis -> Excel -> Word -> Powerpoint -> etc. 
-:::
-
-
-## Implementation != Interface
-
-![](media/qmd-knitr.png)
-
-## Language Agnostic (Python or Julia)
-
-![](media/qmd-jupyter.png)
-
-## Interface Agnostic
-
-::: r-stack
-![](media/rstudio-preview.png){.fragment}
-
-![](media/jupyterlab-preview.png){.fragment}
-
-![](media/python-vscode.png){.fragment}
-:::
-
-## So what is Quarto?
-
-> Quarto is an open source scientific and technical publishing system.
-
--   HTML reports, blogs, and websites.\
--   PDF & Word documents.\
--   Presentations (Powerpoint, Beamer, revealjs).\
--   Technical Books & Journal Articles.\
--   Dashboards.
--   Projects.
-
-## Quarto Document Creation in RStudio
-
-::: r-stack
-![](media/qmd_doc.png){.fragment}
-
-![](media/qmd_presentation.png){.fragment}
-
-![](media/qmd_interactive.png){.fragment}
-:::
-
-# Markdown {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
 ## Mardown is Text
 
 ![](media/qmd_raw.png)
 
+## Tranforming using Quarto
+
+To turn the raw text you see in RStudio into a document, we are going to use Quarto, which you should have already seen in a previous presentation. 
+
+If not, see [this](https://github.com/dyerlabteaching/quarto) repository for more information.
+
+
 ## Your Turn 🫵
 
 - Open up RStudio on your computer.    
-- Create a Quarto Word Document.   
+- Create a Quarto Document that will be rendered as a Word Document.   
 - Render the document.  
-- Add `theme: sketchy` to the YAML.
-- Change to `format: html` in the YAML.
+- Change to `format: html` in the YAML and render the document again.
+- Change the theme.  Add a line to the YAML that has `theme: sketchy`.
+- Go check-out the additional [themes](https://quarto.org/docs/output-formats/html-themes.html) and see if you can find a 'dark mode' and 'light mode' one that you like.
 
 &nbsp;
 
@@ -89,20 +42,220 @@ This means that you do not have to copy-paste from analysis -> Excel -> Word -> 
 countdown::countdown(minutes=5, seconds=0, top=0, font_size = "1em") 
 ```
 
+# YAML {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
+
 
 
 ## YAML
 
-YAML (Yet Another Markdown Language) is a method of setting meta-data for the whole document. 
+YAML (**Y**et **A**nother **M**arkdown **L**anguage) is a method of setting meta-data relevant to the parsing and rendering of a markdown document. 
  
+:::{.incremental}
 - It **must** be at the top of the document.  
 
-- It is *delimited* by three dashes, one set above and one below.
+- It is *delimited* by three dashes, one set above and one below the content.
+
+- Can be set for all files in a project (see file `_quarto.yml` in this repository) to standardize meta data for all instances of a document type (e.g., all PDF's have this them, all DOCX have a TOC, etc.).
+:::
 
 
-## Markdown
+## YAML Singleton Grammar
 
-Markdown is a method to typeset *text* using only keyboard commands.  Plain text is displayed as body styled texts.  
+The way that YAML works is a simple key:value setup.  For these cases, all items are on a single line, like you did previously to change the output from docx to html by changing: 
+
+`format: docx` 
+
+to 
+
+`format: html`  
+
+The colon is REQUIRED.
+
+## YAML as Compound Stuff
+
+Sometimes we have nested YAML.  For example, maybe when I make a PDF I do not want a table of contents but when I create an html document I do.  Instead of reformatting and rewriting all of this, I can include both PDF and HTML YAML.
+
+To do this, you use tabs to nest items underneath the general section **and** add a colon to the end of each line that has some kind of nested object.
+
+:::{.fragment .fade-in}
+```
+format:
+  html:
+    toc: true
+  pdf:
+    toc: false
+```
+:::
+
+## YAML with Several Options
+
+And sometimes, we have a lot of options under a single *key* in YAML.  For example, if we have several authors on a paper, we can include them as itemized entries.
+
+```
+author:
+  - name: YOUR NAME
+  - name: OTHER PERSON
+```
+
+## Your Turn 🫵
+
+Try the following and see how it renders.
+
+1. Open the quarto html document from before and add an option for the author by inserting `author: YOUR NAME HERE` into the YAML (n.b., you must replace `YOUR NAME HERE` with your actual name...)  
+2. Add three authors to the paper and render it.
+3. Go check out the [quarto documentation](https://quarto.org/docs/journals/authors.html) on authors and affiliations and make an affiliation for each of the three authors.
+
+
+&nbsp;
+
+```{r}
+countdown::countdown(minutes=5, seconds=0, top=0, font_size = "1em") 
+```
+
+# Markdown Rationalle {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
+
+
+## Markdown Defines Typography
+
+One of the challenges to producing several kinds of documents (e.g., HTML, DocX, PDF, Dashboard, etc.) from a single source is that the common WYSIWYG editors have you specify the physical appearance of elements.
+
+::: {.incremental}
+- The font, color, and size of Headings.  
+- How to format titles and legends for tables and figures.
+- How to number figures and tables.
+- What is the base font.
+- What is the page size.
+- How do I get this image to not jump to the next f*%$ing page!!!
+:::
+
+## Separation of Content from Display
+
+What *Markdown* lets you
+
+- Identify the components of the text that have special meaning, and then
+
+- Defer decisions about styles, colors, fonts, etc. until render time.
+
+:::{.fragment .fade-in}
+In this presentation, the slide title is actually a level 2 heading and is shown on the slide as a **<font size="25em">bold and larger</font>** font face.  However, if I rendered this as a single HTML page, it may be <font color="orange" size="18em">Orange</font> but if it goes to a PowerPoint, I want it to fit into my color them and be <font color="red" size="32em" style="font-family: Monospace;"><b>Red, bold, and Monospace</b></font>.
+:::
+
+## Separation Leads to Simplicity
+
+&nbsp;
+
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.fragment .fade-in}
+### 👎 Never 
+
+Waste your time working on display characteristics *before* the actual text of what you are producing is finished.  
+
+Your time is just too valuable.
+:::
+:::
+
+:::{.column width="50%"}
+:::{ .fragment .fade-in}
+### Instead 👍 
+
+Waste your time working on the actual content of the work you are doing.  
+
+The display will come later (reformatting bibliographies, changing journal formats, etc.)
+:::
+:::
+
+::::
+
+## Separation Deferrs Internal Connections
+
+Separating also allows you to generalize things like:
+
+- References to figures and table and 
+- Bibliographies
+
+:::{.fragment .fade-in}
+What chaos is created by inserting a new figure in between Figure 3 and Figure 4 in your thesis written in Word?
+:::
+
+## Separation Leads to Dynamic Documents
+
+The use of Markdown mixed with `R` (or python or julia) means that we can:
+
+:::{.incremental}
+1. Specify a table or figure in code 
+2. When rendered the actual figure of table is produced with the data.
+3. Allows dynamic documents/reports to be created
+4. Forms **tight** connection between the data, analyses, and associated textual descriptions
+:::
+
+## Separation Leads to In-Text Content
+
+Stop typing analyses and data output directly, have Markdown insert results when rendered.
+
+:::{.incremental}
+- U `R` code *within* the text itself.
+- When the document is rendered, it will execute the code an put in the results.
+- Changes to data, analyses, df, test statistics, etc. are all *automagically* updated
+:::
+
+
+## Markdown is Text
+
+Finally, since Markdown is just text:
+
+:::{.incremental}
+- Allows the use of GitHub for repositories & collaboration, 
+- *Never* becomes lost because you cannot find a copy of some program that is no longer supported, 
+- Is always readable on all platforms at all times.
+:::
+
+# Markdown Syntax {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
+
+
+
+## Simple Typographic Components
+
+Markdown is a method to typeset *text* using only keyboard commands.  
+
+Plain text is displayed as body styled texts.  
+
+What you type is what you get.
+
+
+## Titles, Sections, and Headings
+
+In your word processor, you have Titles, Subtitles, Header 1, Header 2, Header 3, etc.
+
+::::{.columns}
+
+:::{.column width="50%"}
+![](media/styles.png)
+:::
+
+
+:::{.column width="50%}
+:::{.fragment .fade-in}
+In Markdown, we indicate these elements by prepending a hashtag to the text.
+:::
+:::
+
+::::
+
+
+## Titles, Sections, and Headings
+
+The more hashtags, the less prominent the header level.
+
+![](media/headings.png){fig-align="center"}
+
+
+## Simple Typographic Markup
+
+The most common features of text are also "marked them up" using the following conventions.
+
+&nbsp;
 
 Markdown              | Result   
 ----------------------|-------------  
@@ -111,23 +264,10 @@ Markdown              | Result
 \~\~strikethrough\~\~ | ~~strikethrough~~
 
 
-## Unordered Lists
 
-Lists are manually created using either dashes or numbers.  
+## Itemized & Numeric Lists
 
-&nbsp;
-
-In Markdown, this:  
-
-\- This item  
-\- That item  
-
-&nbsp;
-
-Is rendered as: 
-
-- This item  
-- That item   
+![](media/lists.png){fig-align="center"}
 
 
 ## Image & Links
@@ -139,11 +279,14 @@ URL's can be used to include both to webpages and images (either online or as a 
 | Markdown                          | Rendered As                         |
 |-----------------------------------|-------------------------------------|
 | \[CES\](https://ces.vcu.edu)      | [CES](https://ces.vcu.edu)          |
-| !\[Goat\](media/goat.jpg) | ![alt text](media/goat.jpg) |
+| !\[alt text\](media/goat.jpg) | ![alt text](media/goat.jpg) |
 
 
-
+:::{.fragment .fade-in}
+Additional figure configurations are described [here](https://quarto.org/docs/authoring/figures.html).
+:::
 
 <!-- https://rstudio-conf-2022.github.io/get-started-quarto/materials/01-intro-quarto.html#/anatomy-of-a-quarto-document  -->
+
 
 

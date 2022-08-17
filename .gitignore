@@ -43,3 +43,7 @@ vignettes/*.pdf
 slides_files/
 narrative_files/
 libs/
+
+README.html
+README_files/
+/.quarto/
