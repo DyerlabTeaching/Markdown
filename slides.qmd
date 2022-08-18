@@ -290,18 +290,82 @@ Additional figure configurations are described [here](https://quarto.org/docs/au
 <!-- https://rstudio-conf-2022.github.io/get-started-quarto/materials/01-intro-quarto.html#/anatomy-of-a-quarto-document  -->
 
 
+## Embedding IFrames
+
+<font size="+1">
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+</font>
+
+&nbsp;
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
 
 ## Code Chunks
 
 Markdown mixes rather nicely with code.
 
-1. We write code as either *chunks* between paragraphs of text or as indiviudal *elements* within the text.
+1. We write code as either *chunks* between paragraphs of text or as individual *elements* within the text.
 2. Code is evaluated first and the results are determined.  It can be code output, tables, or figures.
 3. Then when the Markdown is converted, the code output can be hidden (or shown) and the results of the code are presented.
+
+## Chunks of Code
+
+Code *chunks* are defined by three backticks (under the tilde on the upper left corner of your keyboard) surrounding the code.
+
+&nbsp;
+
+\`\`\`\{r\}  
+print("hello world")  
+\`\`\`   
+
+produces the output of the command and presents it in *analysis output styling* (just like `R`)
+
+```{r}
+print("hello world")
+```
+
+
+## Code Chunks
+
+You can also produce graphics (this makes a histgram from 1000 random numbers from a normal distribution).
+
+:::{.columns}
+
+:::{.column width="50%"}
+\`\`\`\{r\}  
+hist( rnorm(1000) )  
+\`\`\`   
+
+:::
+
+:::{.column width="50%"}
+```{r}
+hist( rnorm(1000) )
+```
+
+:::
+
+:::
+
+
 
 
 ## Mermaids
 
+These were `R` code, but Quarto can integrate all kinds of code.  Here is what we call a Mermaid Diagram.
+
+&nbsp;
+\`\`\`\{r\}  
+flowchart LR  
+  A[Hard edge] --> B(Round edge)  
+  B --> C{Decision}  
+  C --> D[Result one]  
+  C --> E[Result two]  
+\`\`\`
+  
 
 ```{mermaid}
 flowchart LR
