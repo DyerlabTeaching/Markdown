@@ -303,6 +303,15 @@ Additional figure configurations are described [here](https://quarto.org/docs/au
 </p>
 
 
+## Embedding Live Pages
+
+
+<font size="+1">
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+</font>
+
+
+
 ## Code Chunks
 
 Markdown mixes rather nicely with code.

@@ -2,9 +2,11 @@
 
 
 ## Impetus
-This is a description of the basic template file for a course component repository
+
+This is a description of the basic use of Markdown for scientific writing and integration with R and RStudio.
 
 ## Student Learning Objectives
+
 At the end of this topic, you should be able to:
 
 1. Open and create a basic [Quarto](https://quarto.org) document in RStudio.
@@ -13,7 +15,7 @@ At the end of this topic, you should be able to:
 1. Integrate [R](https://cran.r-project.org) code into your document.
 
 ## Content
-- Slides
+- [Slides](https://dyerlabteaching.github.io/markdown/slides.html)
 - Narrative
 - In Class
 - Homework
