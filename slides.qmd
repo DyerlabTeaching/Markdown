@@ -7,7 +7,8 @@ format:
     background-transition: fade
     theme: default
     logo: "media/ces_logo.png"
-    chalkboard: true
+    chalkboard: false
+    self-contained: true
 editor: source
 title-slide-attributes: 
   data-background-image: "media/contour.png"
