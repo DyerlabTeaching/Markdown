@@ -1,6 +1,6 @@
 project:
   title: "Markdown"
-  output-dir: docs
+  #output-dir: docs
 
 format:
   html:
