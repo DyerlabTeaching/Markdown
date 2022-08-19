@@ -1,6 +1,5 @@
 ---
 title: "Markdown"
-author: Rodney Dyer
 ---
 
 > Markdown & Notebooks provide interactive documents for more effective data communication
@@ -131,9 +130,9 @@ You can easily integrate code, into the text, either to be displayed *OR* to be 
 
 Notice the following parts:
 
--   Symbols: The $\pi$ symbol is created by the name of the symbol surrounded by dollar signs. \$\\pi\$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.
+-   Symbols: The $\pi$ symbol is created by the name of the symbol surrounded by dollar signs. \$\ \pi \$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.
 -   Text rendered as code (in typography) but not evaluated: Both the \`R\` and the \`pi\` are examples here. Nothing is evaluated, but it *looks* like code.
--   Evaluated R Code: Any code between \`r and \` will be evaluated as R code within the text. When you knit the document, it will be run and the contents between the \`r and \` are replaced by the output of the `R` code. The example here was \`pi\` at the end of the last sentence.
+-   Evaluated R Code: Any code between `\`r` and `\`` will be evaluated as R code within the text. When you knit the document, it will be run and the contents between the `\`r` and `\`` are replaced by the output of the `R` code. The example here was \`pi\` at the end of the last sentence.
 
 ### Code Chunks
 
@@ -174,4 +173,4 @@ There are some very *fundamental* issues regarding chunks, the `R` environment, 
 
 ![Option buttons for each chunk include a quick menu for optoins (gear), the ability to run all the chunks above this one (triangle and line button in the middle), and run this particular chunk (play button).](https://live.staticflickr.com/65535/50162130773_86f545cb28_c_d.jpg)
 
-## 
+
