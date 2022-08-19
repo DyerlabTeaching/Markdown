@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Markdown</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="narrative_files/libs/clipboard/clipboard.min.js"></script>
+<script src="narrative_files/libs/quarto-html/quarto.js"></script>
+<script src="narrative_files/libs/quarto-html/popper.min.js"></script>
+<script src="narrative_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="narrative_files/libs/quarto-html/anchor.min.js"></script>
+<link href="narrative_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="narrative_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="narrative_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="narrative_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="narrative_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Markdown</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<blockquote class="blockquote">
+<p>Markdown &amp; Notebooks provide interactive documents for more effective data communication</p>
+</blockquote>
+<section id="impetus" class="level1">
+<h1>Impetus</h1>
+<p>In current data analytics and communication, there are a wide variety of platforms on which we can provide summaries and insights regarding our work. Each of these end points requires a non-insignificant amount of effort to learn these systems. Moreover, they all are <em>cul de sacs</em> in that all the effort you exert to learn one will not allow you to get the benefits of any other platform than the one you just learned.</p>
+<blockquote class="blockquote">
+<p>This is stupid. - R. Dyer</p>
+</blockquote>
+<p>Enter <a href="https://pandoc.org">Pandoc</a>, the universal document converter. Some really smart programmers have put together a set of software that allows you to convert from or two (and hence between) different document types given that most documents are regularly structured. With Pandoc, it does not matter if you do or do not have Word or Powerpoint or EPub or LaTeX or whatever, as long as you can create one of the supported types, you can convert that input into a huge variety of output types.</p>
+<section id="pandoc-supported-conversions" class="level2">
+<h2 class="anchored" data-anchor-id="pandoc-supported-conversions">Pandoc Supported Conversions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://live.staticflickr.com/65535/50159170006_45b8ed35a0_c_d.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Conversion Formats</figcaption><p></p>
+</figure>
+</div>
+<p>This is critical for us because Code is just text. Once it is evaluated, it can replaced with:</p>
+<ul>
+<li>Numerical values from one or more calculations,</li>
+<li>Textual content from analyses or manipulation, or</li>
+<li>Graphical content from plots.</li>
+</ul>
+<p>As such, we can embed R code within raw text to create our analyses and documents.</p>
+</section>
+</section>
+<section id="installing-quarto-for-markdown" class="level1">
+<h1>Installing Quarto for Markdown</h1>
+<p>The first step is to go to <a href="https://quarto.org">quarto</a> and download the quarto engine for your particular laptop.</p>
+</section>
+<section id="markdown-syntax" class="level1">
+<h1>Markdown Syntax</h1>
+<p>For maximum usability, the document that we embed our code into should be as widely available as possible—unhindered by the necessity of having a particular program just to view the content. For this, R uses <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, created by John Gruber &amp; Aaron Swartz in 2004. Markdown was created so that people are enabled “…to write using an easy-to-read and easy-to-write plain text format…”</p>
+<p>Because everything is text, it is easy share and collaborate using Markdown, and for R, it is how we can make a wide array of output document types including (but not limited to):</p>
+<ul>
+<li>Conventional documents (PDF, Word, RTF, etc.)</li>
+<li>HTML pages with interactive elements (this document here is an interactive html document).</li>
+<li>Presentations (LaTeX, Powerpoint, JavaScript, etc.)</li>
+<li>Dashboards with interactive content.</li>
+</ul>
+<section id="text-markup" class="level2">
+<h2 class="anchored" data-anchor-id="text-markup">Text Markup</h2>
+<p>When we make a document, presentation, or any other output, there are only a finite set of different text components we can put into the document. The document itself does not need to be heavy or bloated, it is just text (though surprisingly, a blank Word document on my laptop with nothing in the document itself is still 12KB in size!). Common elements include:</p>
+<ul>
+<li>Headers &amp; Titles</li>
+<li>Typography such as italic, bold, underline, strike through</li>
+<li>Lists (numbered or as bullets)</li>
+<li>Pictures and links</li>
+<li>Page numbers, tables of contents, etc.</li>
+</ul>
+<p>What Markdown does is allows you to type these components and use ‘marking’ around the elements to make them different from regular text. It is really, amazingly simple.</p>
+<p>Title and headers are created by prepending a hashtag</p>
+<p># Header 1<br>
+## Header 2<br>
+### Header 3<br>
+#### Header 4</p>
+<p>are knit into the following headers styles.</p>
+</section>
+</section>
+<section id="header-1" class="level1">
+<h1>Header 1</h1>
+<section id="header-2" class="level2">
+<h2 class="anchored" data-anchor-id="header-2">Header 2</h2>
+<section id="header-3" class="level3">
+<h3 class="anchored" data-anchor-id="header-3">Header 3</h3>
+<section id="header-4" class="level4">
+<h4 class="anchored" data-anchor-id="header-4">Header 4</h4>
+<p>The actual appearance of the headers are determined by where it is being presented (e.g., in Word it will take the default typography and font attributes, etc.).</p>
+<p>In text markdown examples are shown below and are contained within paragraphs of text. Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>Rendered As</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>plain text</td>
+<td>plain text</td>
+</tr>
+<tr class="even">
+<td>*italic*</td>
+<td><em>italic</em></td>
+</tr>
+<tr class="odd">
+<td>**bold**</td>
+<td><strong>bold</strong></td>
+</tr>
+<tr class="even">
+<td>~~strike through~~</td>
+<td><del>strike through</del></td>
+</tr>
+</tbody>
+</table>
+<p>You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it <em>must</em> be surrounded in <em>square brackets</em>. The link to the web or file or image is right next to the square brackets and is contained within <em>parentheses</em>. The difference between link and image is that images have alternative text (or at times captions) and the whole thing has an exclamation mark in front of it. Here are some examples.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>Rendered As</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[CES](https://ces.vcu.edu)</td>
+<td><a href="https://ces.vcu.edu">CES</a></td>
+</tr>
+<tr class="even">
+<td>![Goat](https://bit.ly/3fRVlfl)</td>
+<td><img src="https://bit.ly/3fRVlfl.png" class="img-fluid" alt="alt text"></td>
+</tr>
+</tbody>
+</table>
+<p>Lists (both numbered and unordered) are created using dashes or asterisks.</p>
+<ul>
+<li>Bullet 1<br>
+</li>
+<li>Bullet 2<br>
+</li>
+<li>Bullet 3</li>
+</ul>
+<p>Will be turned into an unordered list as:</p>
+<ul>
+<li>Bullet 1<br>
+</li>
+<li>Bullet 2<br>
+</li>
+<li>Bullet 3</li>
+</ul>
+<p>Whereas the following raw text.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>1. First<br>
+1. Second<br>
+1. Third</p>
+<p>Will be rendered in list format as:</p>
+<ol type="1">
+<li>First<br>
+</li>
+<li>Second<br>
+</li>
+<li>Third</li>
+</ol>
+<p>Actually, you <em>can</em> just use <code>1.</code> in front of every line if you like, it will auto-number them for you when it makes a list. I tend to do this because it makes it a bit easier in case I want to reorder the list later and I don’t have to go back and change the numbers.</p>
+</section>
+</section>
+</section>
+<section id="code-text" class="level2">
+<h2 class="anchored" data-anchor-id="code-text">Code &amp; Text</h2>
+<p>On of the strengths of RMarkdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses <em>and</em> data as close to one another as possible, helping with reproducibility and error reduction.</p>
+<section id="inline-code" class="level3">
+<h3 class="anchored" data-anchor-id="inline-code">Inline Code</h3>
+<p>You can easily integrate code, into the text, either to be displayed <em>OR</em> to be evaluated. For example, in <code>R</code> you get the value of <span class="math inline">\(\pi\)</span> by the constant <code>pi</code>. Type that into the console and it will return 3.1415927.</p>
+<p>If you look at the RMarkdown for that paragraph above, it looks like the following before knitting:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>You can easily integrate code, into the text, either to be displayed <span class="sc">*</span>OR<span class="sc">*</span> to be evaluated.  For example, <span class="cf">in</span> <span class="st">`</span><span class="at">R</span><span class="st">`</span> you get the value of <span class="sc">$</span>\pi<span class="sc">$</span> by the constant <span class="st">`</span><span class="at">pi</span><span class="st">`</span>. Type that into the console and it will return <span class="dv">3</span>.<span class="fl">1415927.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Notice the following parts:</p>
+<ul>
+<li>Symbols: The <span class="math inline">\(\pi\)</span> symbol is created by the name of the symbol surrounded by dollar signs. $&nbsp;$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.</li>
+<li>Text rendered as code (in typography) but not evaluated: Both the `R` and the `pi` are examples here. Nothing is evaluated, but it <em>looks</em> like code.</li>
+<li>Evaluated R Code: Any code between <code>\</code>r<code>and</code>`<code>will be evaluated as R code within the text. When you knit the document, it will be run and the contents between the</code>`r<code>and</code>`<code>are replaced by the output of the</code>R<code>code. The example here was \</code>pi` at the end of the last sentence.</li>
+</ul>
+</section>
+<section id="code-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="code-chunks">Code Chunks</h3>
+<p>In addition to code within the text, RMarkdown supports <em>code chunks</em>, which can be one or many lines of raw <code>R</code> code. This code is executed and the results are merged into the markdown in the document (text, graphical, interactive widgets, whatever) before knitting.</p>
+<p>Each chunk is enclosed within boundary rows, the top row <strong>must</strong> contain three acute accents (back ticks - `) followed by the letter r in curly brackets ```{r}. The end of the chunk is indicated by three back ticks on their own line such as ```. Everything between these two enclosing lines is treated as <code>R</code> code and is subject to evaluation when you re-knit the document.</p>
+<p>Here is what a chunk looks like in markdown that prints out a simple message “This is text from a chunk.</p>
+<p>```{r}<br>
+print(“This is text from a chunk”)<br>
+```</p>
+<p>When it is evaluated, the <code>R</code> interpreter removes the first and last rows, and executes the code within them. By default, the code is presented as a box in the output as well as any output that is produced from the code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"This is text from a chunk"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "This is text from a chunk"</code></pre>
+</div>
+</div>
+<p>The first line in the chunk can also be used to modify the behavior of the code. There are several options that you can place within the curly brackets, including:</p>
+<ul>
+<li><code>{r eval=FALSE}</code>: Will not evaluate (e.g., run) the code. The default value is <code>TRUE</code>.<br>
+</li>
+<li><code>{r echo=FALSE}</code>: Will not show the code in the document. This is great for our final version of our analyses, we want the output but not the code chunks showing. The default value is <code>TRUE</code>.<br>
+</li>
+<li><code>{r message=FALSE, warning=FALSE, error=FALSE}</code>: These suppress the messages that <code>R</code> prints out on occasion.</li>
+</ul>
+<p>See the reference guide for several more options you can put into the header of each chunk.</p>
+</section>
+</section>
+<section id="code-chunks-in-document" class="level2">
+<h2 class="anchored" data-anchor-id="code-chunks-in-document">Code Chunks in Document</h2>
+<p>There are some very <em>fundamental</em> issues regarding chunks, the <code>R</code> environment, and documents that should be pointed out here.</p>
+<ol type="1">
+<li>The <code>R</code> environment (see tab labeled <strong>Environment</strong> in the RStudio interface) has all the variables and new functions that you have created listed and available for use.</li>
+<li>An <code>R</code> Markdown document is not a ‘living’ environment. If you make a change in a chunk, you <em>must</em> rerun that chunk to have the output available and inserted into the <strong>Environment</strong>. It does not do it automagically.</li>
+<li>When you knit a document, the <strong>only</strong> data it has is what is actually in the document itself. It does not look to the general <strong>Environment</strong> for variables and functions. This means that if you create a variable or load data using the Console and then reference it in the Document, it will fail when you try to knit the document.</li>
+<li>All the code and variables in a document (if they are not within a chunk with <code>eval=FALSE</code>) is visible to everything in the document below where it was defined.<br>
+</li>
+<li>Chunks are evaluated from the top of the document to the bottom of the document.<br>
+</li>
+<li>The options for each chunk are available from the setup menu on the top right of the chunk itself (the gear icon). Additional options include a button to run all the chunks prior to this one as well as running this particular chunk (see image).</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://live.staticflickr.com/65535/50162130773_86f545cb28_c_d.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Option buttons for each chunk include a quick menu for optoins (gear), the ability to run all the chunks above this one (triangle and line button in the middle), and run this particular chunk (play button).</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1" role="doc-endnote"><p>This is a footnote and is defined by enclosing square brackets and a carat symbol (^) where you want to put the footnote in the text (e.g., [^1]) and then at the bottom of the document add the text (this part) prepended by [^1]:. The linking to the footnote and back to the place you put it will be automagically inserted.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
