@@ -17,7 +17,7 @@ title-slide-attributes:
 ---
 
 
-## Markdown
+# Markdown {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
 &nbsp;
 
@@ -32,99 +32,7 @@ title-slide-attributes:
 
 ![](media/qmd_raw.png)
 
-## Tranforming using Quarto
 
-To turn the raw text you see in RStudio into a document, we are going to use Quarto, which you should have already seen in a previous presentation. 
-
-If not, see [this](https://github.com/dyerlabteaching/quarto) repository for more information.
-
-
-## Your Turn 🫵
-
-- Open up RStudio on your computer.    
-- Create a Quarto Document that will be rendered as a Word Document.   
-- Render the document.  
-- Change to `format: html` in the YAML and render the document again.
-- Change the theme.  Add a line to the YAML that has `theme: sketchy`.
-- Go check-out the additional [themes](https://quarto.org/docs/output-formats/html-themes.html) and see if you can find a 'dark mode' and 'light mode' one that you like.
-
-&nbsp;
-
-```{r}
-countdown::countdown(minutes=5, seconds=0, top=0, font_size = "1em") 
-```
-
-# YAML {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
-
-
-
-## YAML
-
-YAML (**Y**et **A**nother **M**arkdown **L**anguage) is a method of setting meta-data relevant to the parsing and rendering of a markdown document. 
- 
-:::{.incremental}
-- It **must** be at the top of the document.  
-
-- It is *delimited* by three dashes, one set above and one below the content.
-
-- Can be set for all files in a project (see file `_quarto.yml` in this repository) to standardize meta data for all instances of a document type (e.g., all PDF's have this them, all DOCX have a TOC, etc.).
-:::
-
-
-## YAML Singleton Grammar
-
-The way that YAML works is a simple key:value setup.  For these cases, all items are on a single line, like you did previously to change the output from docx to html by changing: 
-
-`format: docx` 
-
-to 
-
-`format: html`  
-
-The colon is REQUIRED.
-
-## YAML as Compound Stuff
-
-Sometimes we have nested YAML.  For example, maybe when I make a PDF I do not want a table of contents but when I create an html document I do.  Instead of reformatting and rewriting all of this, I can include both PDF and HTML YAML.
-
-To do this, you use tabs to nest items underneath the general section **and** add a colon to the end of each line that has some kind of nested object.
-
-:::{.fragment .fade-in}
-```
-format:
-  html:
-    toc: true
-  pdf:
-    toc: false
-```
-:::
-
-## YAML with Several Options
-
-And sometimes, we have a lot of options under a single *key* in YAML.  For example, if we have several authors on a paper, we can include them as itemized entries.
-
-```
-author:
-  - name: YOUR NAME
-  - name: OTHER PERSON
-```
-
-## Your Turn 🫵
-
-Try the following and see how it renders.
-
-1. Open the quarto html document from before and add an option for the author by inserting `author: YOUR NAME HERE` into the YAML (n.b., you must replace `YOUR NAME HERE` with your actual name...)  
-2. Add three authors to the paper and render it.
-3. Go check out the [quarto documentation](https://quarto.org/docs/journals/authors.html) on authors and affiliations and make an affiliation for each of the three authors.
-
-
-&nbsp;
-
-```{r}
-countdown::countdown(minutes=5, seconds=0, top=0, font_size = "1em") 
-```
-
-# Markdown Rationalle {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
 
 ## Markdown Defines Typography
@@ -222,6 +130,80 @@ Finally, since Markdown is just text:
 - *Never* becomes lost because you cannot find a copy of some program that is no longer supported, 
 - Is always readable on all platforms at all times.
 :::
+
+
+
+
+# YAML {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
+
+
+
+## YAML
+
+YAML (**Y**et **A**nother **M**arkdown **L**anguage) is a method of setting meta-data relevant to the parsing and rendering of a markdown document. 
+ 
+:::{.incremental}
+- It **must** be at the top of the document.  
+
+- It is *delimited* by three dashes, one set above and one below the content.
+
+- Can be set for all files in a project (see file `_quarto.yml` in this repository) to standardize meta data for all instances of a document type (e.g., all PDF's have this them, all DOCX have a TOC, etc.).
+:::
+
+
+## YAML Singleton Grammar
+
+The way that YAML works is a simple key:value setup.  For these cases, all items are on a single line, like you did previously to change the output from docx to html by changing: 
+
+`format: docx` 
+
+to 
+
+`format: html`  
+
+The colon is REQUIRED.
+
+## YAML as Compound Stuff
+
+Sometimes we have nested YAML.  For example, maybe when I make a PDF I do not want a table of contents but when I create an html document I do.  Instead of reformatting and rewriting all of this, I can include both PDF and HTML YAML.
+
+To do this, you use tabs to nest items underneath the general section **and** add a colon to the end of each line that has some kind of nested object.
+
+:::{.fragment .fade-in}
+```
+format:
+  html:
+    toc: true
+  pdf:
+    toc: false
+```
+:::
+
+## YAML with Several Options
+
+And sometimes, we have a lot of options under a single *key* in YAML.  For example, if we have several authors on a paper, we can include them as itemized entries.
+
+```
+author:
+  - name: YOUR NAME
+  - name: OTHER PERSON
+```
+
+## Your Turn 🫵
+
+Try the following and see how it renders.
+
+1. Open the quarto html document from before and add an option for the author by inserting `author: YOUR NAME HERE` into the YAML (n.b., you must replace `YOUR NAME HERE` with your actual name...)  
+2. Add three authors to the paper and render it.
+3. Go check out the [quarto documentation](https://quarto.org/docs/journals/authors.html) on authors and affiliations and make an affiliation for each of the three authors.
+
+
+&nbsp;
+
+```{r}
+countdown::countdown(minutes=5, seconds=0, top=0, font_size = "1em") 
+```
+
 
 # Markdown Syntax {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
@@ -378,6 +360,7 @@ hist( rnorm(1000) )
 These were `R` code, but Quarto can integrate all kinds of code.  Here is what we call a Mermaid Diagram.
 
 &nbsp;
+
 \`\`\`\{r\}  
 flowchart LR  
   A[Hard edge] --> B(Round edge)  
@@ -385,7 +368,8 @@ flowchart LR
   C --> D[Result one]  
   C --> E[Result two]  
 \`\`\`
-  
+
+## Mermaids  
 
 ```{mermaid}
 flowchart LR

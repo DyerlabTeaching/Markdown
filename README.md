@@ -1,6 +1,6 @@
-<p align="center">
+
 ![](https://live.staticflickr.com/65535/52296244254_3443324e58_o_d.png)
-</p>
+
 
 # Basic Markdown
 
