@@ -17,6 +17,17 @@ title-slide-attributes:
 ---
 
 
+## Markdown
+
+&nbsp;
+
+&nbsp;
+
+<p align="center">
+![](https://live.staticflickr.com/65535/52296244254_3443324e58_o_d.png)
+</p>
+
+
 ## Mardown is Text
 
 ![](media/qmd_raw.png)

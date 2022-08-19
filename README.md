@@ -1,4 +1,9 @@
+<p align="center">
+![](https://live.staticflickr.com/65535/52296244254_3443324e58_o_d.png)
+</p>
+
 # Basic Markdown
+
 
 
 ## Impetus
@@ -15,11 +20,8 @@ At the end of this topic, you should be able to:
 1. Integrate [R](https://cran.r-project.org) code into your document.
 
 ## Content
-- [Slides](https://dyerlabteaching.github.io/markdown/slides.html)
-- Narrative
-- In Class
-- Homework
-- Data Set
+- [Slides](https://dyerlabteaching.github.io/Markdown/slides.html)
+- [Narrative](https://dyerlabteaching.github.io/Markdown/narrative.html)
 
 ## Contact Information
 If you need to contact me, I am available at:  
@@ -27,7 +29,3 @@ If you need to contact me, I am available at:
 - Twitter: [@dyerlab](https://twitter.com/dyerlab)  
 
 
-
-&nbsp;                         |           &nbsp;      
-:------------------------------|-----------------------------:  
-[dyerlab](https://dyerlab.org) | Environmental Data Literacy   
