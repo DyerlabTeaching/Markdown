@@ -28,14 +28,12 @@ title-slide-attributes:
 </p>
 
 
-## Mardown is Text
-
-![](media/qmd_raw.png)
 
 
 
 
-## Markdown Defines Typography
+
+## Markdown Defines Typography {.scrollable}
 
 One of the challenges to producing several kinds of documents (e.g., HTML, DocX, PDF, Dashboard, etc.) from a single source is that the common WYSIWYG editors have you specify the physical appearance of elements.
 
@@ -131,6 +129,9 @@ Finally, since Markdown is just text:
 - Is always readable on all platforms at all times.
 :::
 
+## Mardown is Text
+
+![](media/qmd_raw.png)
 
 
 
