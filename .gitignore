@@ -39,7 +39,6 @@ vignettes/*.pdf
 .Renviron
 .DS_Store
 *.icloud
-*.html
 slides_files/
 narrative_files/
 libs/
