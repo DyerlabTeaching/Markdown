@@ -8,11 +8,6 @@ format:
     theme: default
     logo: "media/ces_logo.png"
     chalkboard: true
-    code-fold: true
-    self-contained: false
-    code-overflow: wrap
-    code-block-border-left: "#31BAE9"
-    footer: "[Dyerlab](https://dyerlab.org)"
 editor: source
 title-slide-attributes: 
   data-background-image: "media/contour.png"

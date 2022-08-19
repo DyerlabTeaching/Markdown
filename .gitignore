@@ -39,12 +39,9 @@ vignettes/*.pdf
 .Renviron
 .DS_Store
 *.icloud
-slides_files/
-narrative_files/
 libs/
 .quarto
 .quarto/*
 
-README.html
-README_files/
+
 /.quarto/
