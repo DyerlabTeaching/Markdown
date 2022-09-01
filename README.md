@@ -19,7 +19,7 @@ At the end of this topic, you should be able to:
 1. Insert images (local and remote) into basic documents.
 1. Integrate [R](https://cran.r-project.org) code into your document.
 
-## Content
+## Supporting Content
 - [Slides](https://dyerlabteaching.github.io/Markdown/slides.html)
 - [Narrative](https://dyerlabteaching.github.io/Markdown/narrative.html)
 - A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) 
