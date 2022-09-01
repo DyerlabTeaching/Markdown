@@ -22,6 +22,7 @@ At the end of this topic, you should be able to:
 ## Content
 - [Slides](https://dyerlabteaching.github.io/Markdown/slides.html)
 - [Narrative](https://dyerlabteaching.github.io/Markdown/narrative.html)
+- A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) 
 
 ## Contact Information
 If you need to contact me, I am available at:  
