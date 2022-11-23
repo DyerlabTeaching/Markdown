@@ -1,10 +1,6 @@
+# Markdown
 
 ![](https://live.staticflickr.com/65535/52296244254_3443324e58_o_d.png)
-
-
-# Basic Markdown
-
-
 
 ## Impetus
 
@@ -14,10 +10,10 @@ This is a description of the basic use of Markdown for scientific writing and in
 
 At the end of this topic, you should be able to:
 
-1. Open and create a basic [Quarto](https://quarto.org) document in RStudio.
-1. Write textual content using basic markdown syntax.
-1. Insert images (local and remote) into basic documents.
-1. Integrate [R](https://cran.r-project.org) code into your document.
+- Open and create a basic [Quarto](https://quarto.org) document in RStudio.
+- Write textual content using basic markdown syntax.
+- Insert images (local and remote) into basic documents.
+- Integrate [R](https://cran.r-project.org) code into your document.
 
 ## Supporting Content
 - [Slides](https://dyerlabteaching.github.io/Markdown/slides.html)
