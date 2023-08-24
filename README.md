@@ -20,7 +20,8 @@ At the end of this topic, you should be able to:
 For this topic, there are the following resources.  These should get you up-to-speed on using Markdown in RStudio.  
 
 - [Slides](https://dyerlabteaching.github.io/Markdown/slides.html) describing the rationale for Markdown and how to use it in RStudio where you can mix textual content with data, code, and output.  
-- A longer [narrative](https://dyerlabteaching.github.io/Markdown/narrative.html) on the topic that goes into more depth than the slides that includes code and example output.  
+- A longer [narrative](https://dyerlabteaching.github.io/Markdown/narrative.html) on the topic that goes into more depth than the slides that includes code and example output.
+- A previous [Video](https://youtu.be/f50Hz92IyIQ) on Markdown and Notebooks in RStudio.
 - External resources:  
   - A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)  
   - A site based upon [RMarkdown](https://rmarkdown.rstudio.com/) with examples.
