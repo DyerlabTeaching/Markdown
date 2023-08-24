@@ -42,6 +42,7 @@ vignettes/*.pdf
 libs/
 .quarto
 .quarto/*
-
+README.html
+README_files/
 
 /.quarto/

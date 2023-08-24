@@ -4,7 +4,7 @@
 
 ## Impetus
 
-This is a description of the basic use of Markdown for scientific writing and integration with R and RStudio.
+This is a description of the basic use of Markdown for scientific writing and integration with R and RStudio.  We will be using Markdown throughout the semester as the way to communicate data findings.
 
 ## Student Learning Objectives
 
@@ -16,13 +16,20 @@ At the end of this topic, you should be able to:
 - Integrate [R](https://cran.r-project.org) code into your document.
 
 ## Supporting Content
-- [Slides](https://dyerlabteaching.github.io/Markdown/slides.html)
-- [Narrative](https://dyerlabteaching.github.io/Markdown/narrative.html)
-- A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) 
+
+For this topic, there are the following resources.  These should get you up-to-speed on using Markdown in RStudio.  
+
+- [Slides](https://dyerlabteaching.github.io/Markdown/slides.html) describing the rationale for Markdown and how to use it in RStudio where you can mix textual content with data, code, and output.  
+- A longer [narrative](https://dyerlabteaching.github.io/Markdown/narrative.html) on the topic that goes into more depth than the slides that includes code and example output.  
+- External resources:  
+  - A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)  
+  - A site based upon [RMarkdown](https://rmarkdown.rstudio.com/) with examples.
+  - The official documentation for [Quarto](https://quarto.org/docs/guide/) (which is the main interface we will be using).
 
 ## Contact Information
-If you need to contact me, I am available at:  
-- Email: [rodney@dyerlab.org](mailto:rodney@dyerlab.org)  
-- Twitter: [@dyerlab](https://twitter.com/dyerlab)  
 
-
+If you need to contact me:    
+ - Office: [LFSCB 105](https://earth.google.com/web/@37.54467538,-77.45441434,71.5959702a,74.61344954d,35y,0.00006882h,0t,0r)  
+ - Email: [rjdyer@vcu.edu](mailto://rjdyer@vcu.edu)  
+ - Mastodon: [@RodneyDyer](https://me.dm/@RodneyDyer)  
+ - Twitter: [@dyerlab](https://twitter.com/dyerlab/)  
