@@ -27,6 +27,12 @@ For this topic, there are the following resources.  These should get you up-to-s
   - A site based upon [RMarkdown](https://rmarkdown.rstudio.com/) with examples.
   - The official documentation for [Quarto](https://quarto.org/docs/guide/) (which is the main interface we will be using).
 
+## Assessment
+
+There is a single task—you will use Markdown to craft a resume for yourself.  
+
+- The [homework](https://dyerlabteaching.github.io/Markdown/homework.html) describing crafting a Markdown version of your resume.
+
 ## Contact Information
 
 If you need to contact me:    
