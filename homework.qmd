@@ -1,0 +1,33 @@
+---
+title: "Basic Markdown"
+editor: visual
+---
+
+## Objectives
+
+By the end of this exercise, you should be able to:
+
+- Create a basic Quarto document in RStudio.  
+- Demonstrate sufficient mastery to create documents suitable for publication.  
+- Add multimedia content to the document.  
+
+
+## Rationalle
+
+A key tenet in modern research is keeping the data, analyses, and output as close as possible.  One way to do this in `R` is to integrate the analyses and visualizations directly into the creation of the documents you are producing. This may be research reports, presentations, posters, etc.  The tighter the link between the document itself and the underlying data and analyses, the more efficient your actions.  This is why we are starting with Markdown. 
+
+Markdown is a method that allows you to focus on the content of your writing rather than the outward display and formatting.  It is entirely in text allowing easy versioning in a system like [Git & GitHub](https://github.com) with robust support across a large number of platforms.  The [RStudio](https://posit.co) has a robust set of supports build-in to allow you to develop a wide array of document types suitable for your work as a scientist.  Moreover, it allows you to embed analysis code (`R`, `Python`, `Julia`, etc.) directly into the body of your document/presentation/report/webpage.  
+
+This first step in using Markdown will focus on creating a basic resume.  In a subsequent learning modules, additional output types will be added.
+
+## Tasks
+
+For this exercise, you will be creating an online Resume (or *Curriculum Vitae*) for yourself.  There are a ton of resources available to you for htis task.  I would start with a general overview of the features necessary for producing a STEM resume.  Here is a [page and accompanying video](https://www.indeed.com/career-advice/resumes-cover-letters/stem-resume) from Indeed.  In addition, you may need the following resources on basic markdown formats and the Quarto document system that RStudio uses:  
+
+  - [Markdown Grammar](https://www.markdownguide.org/cheat-sheet/)   
+
+  - [RStudio & Markdown](https://rmarkdown.rstudio.com/)      
+
+  - [Quarto](https://quarto.org/docs/guide/)   
+
+Use these resources and prepare your own Resume.
