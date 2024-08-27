@@ -1,32 +1,41 @@
 ---
 title: "Basic Markdown"
-editor: visual
 ---
 
 ## Objectives
 
 By the end of this exercise, you should be able to:
 
--   Create a basic Quarto document in RStudio.\
--   Demonstrate sufficient mastery to create documents suitable for publication.\
--   Add multimedia content to the document.
+- Create a Quarto document and presentation in RStudio.  
+- Demonstrate sufficient mastery to create documents suitable for publication.  
+- Add multimedia content to the document.  
+- Publish the content online. 
 
 ## Rationale
 
-A key tenet in modern research is keeping the data, analyses, and output as close as possible. One way to do this in `R` is to integrate the analyses and visualizations directly into the creation of the documents you are producing. This may be research reports, presentations, posters, etc. The tighter the link between the document itself and the underlying data and analyses, the more efficient your actions. This is why we are starting with Markdown.
+A fundamental tenet in modern research is keeping the data, analyses, and output as close as possible. One way to do this in `R` is to directly integrate the analyses and visualizations into creating the documents you produce. This may be research reports, presentations, posters, etc. The tighter the link between the document and the underlying data and analyses, the more efficient your actions are. This is why we are starting with Markdown.
 
-Markdown is a method that allows you to focus on the content of your writing rather than the outward display and formatting. It is entirely in text allowing easy versioning in a system like [Git & GitHub](https://github.com) with robust support across a large number of platforms. The [RStudio](https://posit.co) has a robust set of supports build-in to allow you to develop a wide array of document types suitable for your work as a scientist. Moreover, it allows you to embed analysis code (`R`, `Python`, `Julia`, etc.) directly into the body of your document/presentation/report/webpage.
+Markdown is a method that allows you to focus on the content of your writing rather than the outward display and formatting. It is entirely in text, enabling easy versioning in a system like [Git & GitHub](https://github.com) with robust support across many platforms. The [RStudio](https://posit.co) has a strong support set to allow you to develop a wide array of document types suitable for your work as a scientist. Moreover, it will enable you to embed analysis code (`R`, `Python`, `Julia`, etc.) directly into the body of your document/presentation/report/webpage.
 
-This first step in using Markdown will focus on creating a basic resume. In a subsequent learning modules, additional output types will be added.
+This first step in using Markdown will focus on creating a basic document and presentation. Subsequent learning modules will introduce additional output types and increase the sophistication of the output.  This exercise is intended to have you focus on the basics.
 
-## Tasks
 
-For this exercise, you will be creating an online Resume (or *Curriculum Vitae*) for yourself. There are a ton of resources available to you for htis task. I would start with a general overview of the features necessary for producing a STEM resume. Here is a [page and accompanying video](https://www.indeed.com/career-advice/resumes-cover-letters/stem-resume) from Indeed. In addition, you may need the following resources on basic markdown formats and the Quarto document system that RStudio uses:
+## Context
 
--   [Markdown Grammar](https://www.markdownguide.org/cheat-sheet/)
+Here are the instructions for this homework exercise.  It will be an Assignment on Canvas with an accompanying Rubric for you to see how your content is evaluated.  In addition, you may need the following resources on basic markdown formats and the Quarto document system that RStudio uses:  
+  - [Markdown Grammar](https://www.markdownguide.org/cheat-sheet/).  
+  - [RStudio & Markdown](https://rmarkdown.rstudio.com/).  
+  - [Quarto](https://quarto.org/docs/guide/).  
+  
+## Activities
 
--   [RStudio & Markdown](https://rmarkdown.rstudio.com/)
+The following items will be used to evaluate your output.  These will constitute the `Problem Solved` portion mentioned in the Rubric.  You will turn in url's for the two documents on your GitHub site.
 
--   [Quarto](https://quarto.org/docs/guide/)
+1. Create a folder in your ENVS543 repository project folder (you are opening RStudio in a project, right?), entitled `Markdown` and put these new documents in this folder.  At the end of this activity, you will push your changes up to your GitHub repository and we will configure it to provide the pages as HTML output, hosted on GitHub.    
 
-Use these resources and prepare your own Resume.
+2.  Create a Markdown Resume (or *Curriculum Vitae*) for yourself. There are a ton of resources available to you for htis task. I would start with a general overview of the features necessary for producing a STEM resume. Here is a [page and accompanying video](https://www.indeed.com/career-advice/resumes-cover-letters/stem-resume) from `Indeed`. 
+
+3. Create a simple Quarto presentation with a handful of slides, where *handful* is interpreted as at least 5, that describes, in some fashion, your interstes in Environmental Studies.  Try to put at least one multimedia object on the presentation.  
+
+
+
