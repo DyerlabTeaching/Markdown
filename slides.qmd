@@ -113,9 +113,9 @@ The use of Markdown mixed with `R` (or python or julia) means that we can:
 Stop typing analyses and data output directly, have Markdown insert results when rendered.
 
 :::{.incremental}
-- U `R` code *within* the text itself.
-- When the document is rendered, it will execute the code an put in the results.
-- Changes to data, analyses, df, test statistics, etc. are all *automagically* updated
+- Use `R` code *within* the text itself.
+- When the document is rendered, it will execute the code an put in the results into the text parts <font color="red">auto-magically</font> (this is a *BFD*).
+- Changes to data, analyses, df, test statistics, etc. are all integrated.
 :::
 
 
@@ -274,7 +274,7 @@ URL's can be used to include both to webpages and images (either online or as a 
 | Markdown                          | Rendered As                         |
 |-----------------------------------|-------------------------------------|
 | \[CES\](https://ces.vcu.edu)      | [CES](https://ces.vcu.edu)          |
-| !\[alt text\](media/goat.jpg) | ![alt text](media/goat.jpg) |
+| !\[alt text\](media/goat.jpg)     | ![alt text](media/goat.jpg) |
 
 
 :::{.fragment .fade-in}
@@ -284,25 +284,24 @@ Additional figure configurations are described [here](https://quarto.org/docs/au
 <!-- https://rstudio-conf-2022.github.io/get-started-quarto/materials/01-intro-quarto.html#/anatomy-of-a-quarto-document  -->
 
 
-## Embedding IFrames
+## Embedding Video 
 
-<font size="+1">
-`<iframe width="560" height="315" src="https://youtu.be/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-</font>
-
+![Embed Code from YouTube](media/embed.png)
 &nbsp;
 
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-
+<center>
+{{< video https://www.youtube.com/embed/xvFZjo5PgG0?si=q4gqUYecVF33dsZB width=560 height=315 >}}
+</center>
 
 ## Embedding Live Pages
 
+&nbsp;
 
-<font size="+1">
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-</font>
+<center>
+```{=html}
+<iframe src="https://github.com/dyerlabteaching/" width=640 height=480></iframe>
+```
+</center>
 
 
 
@@ -358,7 +357,7 @@ hist( rnorm(1000) )
 
 ## Mermaids
 
-These were `R` code, but Quarto can integrate all kinds of code.  Here is what we call a Mermaid Diagram.
+These were `R` code, but Quarto can integrate all kinds of code.  Here is what we call a [Mermaid Diagrams](https://github.blog/developer-skills/github/include-diagrams-markdown-files-mermaid/).
 
 &nbsp;
 
@@ -379,3 +378,83 @@ flowchart LR
   C --> D[Result one]
   C --> E[Result two]
 ```
+
+
+## Presentations
+
+
+:::{.columns}
+
+
+:::{.column width="50%"}
+![](media/presentationFile.png)  
+:::
+
+:::{.column width="50%"}
+![](media/presentationType.png)
+
+:::
+
+:::
+
+
+## Presentation Formats (Visual)
+
+<center>
+![](media/presentation1.png){width="75%"}
+</center>
+
+
+## Presentation Formats (Source)
+
+<center>
+![](media/presentation2.png){width="75%"}
+</center>
+
+
+
+## Slide Separation
+
+### Formatting Individual Slide Content
+
+
+- Each slice starts with a **H2** (e.g., `## title`), which is denoted as its "Slide Title",   
+- Subtitles are **H3** (`### subtitle`),  
+- Remaining content is normal markdown.
+
+
+
+
+
+## Customizations
+
+There are a `ton` of customizations available.  I would suggest you look to the official [Quarto Reference](https://quarto.org/docs/reference/) site:
+
+```{=html}
+<iframe src="https://quarto.org/docs/reference/" width=640 height=480></iframe>
+```
+
+
+
+
+
+
+## Questions
+
+&nbsp;
+
+::: {layout-ncol="2"}
+If you have any questions, please feel free to either post to the [Canvas](https://canvas.vcu.edu) discussion board for the class or drop me an [email](mailto://rjdyer@vcu.edu).
+
+![](media/peter_sellers.gif){.middle fig-alt="Peter Sellers looking bored" fig-align="center" width="500"}
+:::
+
+
+
+
+
+
+
+
+
+
