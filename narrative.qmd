@@ -84,7 +84,7 @@ You can also embed links and images. Both of these are configured in two parts. 
 | Markdown                          | Rendered As                         |
 |-----------------------------------|-------------------------------------|
 | \[CES\](https://ces.vcu.edu)      | [CES](https://ces.vcu.edu)          |
-| !\[Goat\](https://bit.ly/3fRVlfl) | ![alt text](https://bit.ly/3fRVlfl) |
+| !\[Goat\](https://live.staticflickr.com/2417/2278662416_7683abd2d4_n_d.jpg) | ![alt text](https://live.staticflickr.com/2417/2278662416_7683abd2d4_n_d.jpg) |
 
 Lists (both numbered and unordered) are created using dashes or asterisks.
 
