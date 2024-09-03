@@ -6,7 +6,6 @@ format:
   revealjs:
     background-transition: fade
     theme: default
-    logo: "media/ces_logo.png"
     chalkboard: false
     self-contained: true
 editor: source
