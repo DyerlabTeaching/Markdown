@@ -10,7 +10,7 @@ In current data analytics and communication, there are a wide variety of platfor
 
 > This is stupid. - R. Dyer
 
-Enter [Pandoc](https://pandoc.org), the universal document converter. Some really smart programmers have put together a set of software that allows you to convert from or two (and hence between) different document types given that most documents are regularly structured. With Pandoc, it does not matter if you do or do not have Word or Powerpoint or EPub or LaTeX or whatever, as long as you can create one of the supported types, you can convert that input into a huge variety of output types.
+Enter [Pandoc](https://pandoc.org), the universal document converter. Some really smart programmers have put together a set of software that allows you to convert from or two (and hence between) different document types given that most documents are regularly structured. With Pandoc, it does not matter if you do or do not have Word or PowerPoint or EPub or LaTeX or whatever, as long as you can create one of the supported types, you can convert that input into a huge variety of output types.
 
 ## Pandoc Supported Conversions
 
@@ -36,7 +36,7 @@ Because everything is text, it is easy share and collaborate using Markdown, and
 
 -   Conventional documents (PDF, Word, RTF, etc.)
 -   HTML pages with interactive elements (this document here is an interactive html document).
--   Presentations (LaTeX, Powerpoint, JavaScript, etc.)
+-   Presentations (LaTeX, PowerPoint, JavaScript, etc.)
 -   Dashboards with interactive content.
 
 ## Text Markup
@@ -81,16 +81,16 @@ In text markdown examples are shown below and are contained within paragraphs of
 
 You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it *must* be surrounded in *square brackets*. The link to the web or file or image is right next to the square brackets and is contained within *parentheses*. The difference between link and image is that images have alternative text (or at times captions) and the whole thing has an exclamation mark in front of it. Here are some examples.
 
-| Markdown                          | Rendered As                         |
+| Markdown | Rendered As |
 |-----------------------------------|-------------------------------------|
-| \[CES\](https://ces.vcu.edu)      | [CES](https://ces.vcu.edu)          |
-| !\[Goat\](https://live.staticflickr.com/2417/2278662416_7683abd2d4_n_d.jpg) | ![alt text](https://live.staticflickr.com/2417/2278662416_7683abd2d4_n_d.jpg) |
+| \[SLSS\](https://slss.vcu.edu) | [SLSS](https://slss.vcu.edu) |
+| \![Goat\](https://live.staticflickr.com/2417/2278662416_7683abd2d4_n_d.jpg) | ![alt text](https://live.staticflickr.com/2417/2278662416_7683abd2d4_n_d.jpg) |
 
 Lists (both numbered and unordered) are created using dashes or asterisks.
 
-- Bullet 1\
-- Bullet 2\
-- Bullet 3
+-   Bullet 1\
+-   Bullet 2\
+-   Bullet 3
 
 Will be turned into an unordered list as:
 
@@ -130,9 +130,9 @@ You can easily integrate code, into the text, either to be displayed *OR* to be 
 
 Notice the following parts:
 
--   Symbols: The $\pi$ symbol is created by the name of the symbol surrounded by dollar signs. \$\ \pi \$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.
+-   Symbols: The $\pi$ symbol is created by the name of the symbol surrounded by dollar signs. \$ \pi \$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.
 -   Text rendered as code (in typography) but not evaluated: Both the \`R\` and the \`pi\` are examples here. Nothing is evaluated, but it *looks* like code.
--   Evaluated R Code: Any code between `\`r` and `\`` will be evaluated as R code within the text. When you knit the document, it will be run and the contents between the `\`r` and `\`` are replaced by the output of the `R` code. The example here was \`pi\` at the end of the last sentence.
+-   Evaluated R Code: Any code between `\`r`and`\``will be evaluated as R code within the text. When you knit the document, it will be run and the contents between the`\`r`and`\``are replaced by the output of the`R`code. The example here was \`pi\` at the end of the last sentence.
 
 ### Code Chunks
 
@@ -172,5 +172,3 @@ There are some very *fundamental* issues regarding chunks, the `R` environment, 
 6.  The options for each chunk are available from the setup menu on the top right of the chunk itself (the gear icon). Additional options include a button to run all the chunks prior to this one as well as running this particular chunk (see image).
 
 ![Option buttons for each chunk include a quick menu for optoins (gear), the ability to run all the chunks above this one (triangle and line button in the middle), and run this particular chunk (play button).](https://live.staticflickr.com/65535/50162130773_86f545cb28_c_d.jpg)
-
-

@@ -147,7 +147,7 @@ YAML (**Y**et **A**nother **M**arkdown **L**anguage) is a method of setting meta
 
 - It is *delimited* by three dashes, one set above and one below the content.
 
-- Can be set for all files in a project (see file `_quarto.yml` in this repository) to standardize meta data for all instances of a document type (e.g., all PDF's have this them, all DOCX have a TOC, etc.).
+- Can be set for all files in a project (see file `_quarto.yml` in [this repository](https://github.com/dyerlabteaching/markdown)) to standardize meta data for all instances of a document type (e.g., all PDF's have this them, all DOCX have a TOC, etc.).
 :::
 
 
@@ -264,7 +264,7 @@ Markdown              | Result
 ![](media/lists.png){fig-align="center"}
 
 
-## Image & Links
+## Links & Local Images
 
 URL's can be used to include both to webpages and images (either online or as a path relative to the document you are making on the computer).  
 
@@ -275,6 +275,21 @@ URL's can be used to include both to webpages and images (either online or as a 
 | \[CES\](https://ces.vcu.edu)      | [CES](https://ces.vcu.edu)          |
 | !\[alt text\](media/goat.jpg)     | ![alt text](media/goat.jpg) |
 
+:::{.fragment .fade-in}
+Local references are *relative* to the markdown document.
+:::
+
+
+
+## External Images
+
+External images can be included as well by including full URL.
+
+`![Little Kitty Bro](https://www.flickr.com/photo_download.gne?id=54733336478&secret=78d5afc9a9&size=o)`
+
+<center>
+![Little Kitty Bro](https://www.flickr.com/photo_download.gne?id=54733336478&secret=78d5afc9a9&size=o)
+</center>
 
 :::{.fragment .fade-in}
 Additional figure configurations are described [here](https://quarto.org/docs/authoring/figures.html).
@@ -429,10 +444,10 @@ flowchart LR
 
 There are a `ton` of customizations available.  I would suggest you look to the official [Quarto Reference](https://quarto.org/docs/reference/) site:
 
-```{=html}
-<iframe src="https://quarto.org/docs/reference/" width=640 height=480></iframe>
-```
 
+<center>
+![](media/QuartoReference.png){width="65%"}
+</center>
 
 
 
