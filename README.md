@@ -4,16 +4,16 @@
 
 ## Impetus
 
-This is a description of the basic use of Markdown for scientific writing and integration with R and RStudio.  We will be using Markdown throughout the semester as the way to communicate data findings.
+This learning module introduces the Markdown format as a tool for scientific writing and presentation, highlighting its role in facilitating the integration of data, analysis code, and findings communication using R and RStudio.
 
-## Student Learning Objectives
+## Module Learning Objectives:
 
-At the end of this topic, you should be able to:
+**MLO 1: Markdown Document Creation**
 
-- Open and create a basic [Quarto](https://quarto.org) document in RStudio.
-- Write textual content using basic markdown syntax.
-- Insert images (local and remote) into basic documents.
-- Integrate [R](https://cran.r-project.org) code into your document.
+>  Create professional, publication-ready documents in RStudio using Markdown and Quarto as a platform for clear, reproducible scientific communication.
+
+- *Bloom's Level:* Create
+- *Notes:* This objective frames Markdown/Quarto not as a technical gimmick, but as the medium through which scientific communication happens in the course. The résumé exercise functions as practice, while future modules deepen the communication into data-driven contexts.
 
 ## Supporting Content
 
@@ -36,7 +36,5 @@ There is a single task—you will use Markdown to craft a resume for yourself.
 ## Contact Information
 
 If you need to contact me:    
- - Office: [LFSCB 105](https://earth.google.com/web/@37.54467538,-77.45441434,71.5959702a,74.61344954d,35y,0.00006882h,0t,0r)  
+ - Office: [LFSCB 322](https://earth.google.com/web/@37.54467538,-77.45441434,71.5959702a,74.61344954d,35y,0.00006882h,0t,0r)  
  - Email: [rjdyer@vcu.edu](mailto://rjdyer@vcu.edu)  
- - Mastodon: [@RodneyDyer](https://me.dm/@RodneyDyer)  
- - Twitter: [@dyerlab](https://twitter.com/dyerlab/)  

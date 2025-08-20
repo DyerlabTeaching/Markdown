@@ -1,5 +1,5 @@
 ---
-title: "Basic Markdown"
+title: "Basic Markdown Homework"
 ---
 
 ## Objectives
@@ -29,13 +29,10 @@ Here are the instructions for this homework exercise.  It will be an Assignment 
   
 ## Activities
 
-The following items will be used to evaluate your output.  These will constitute the `Problem Solved` portion mentioned in the Rubric.  You will turn in url's for the two documents on your GitHub site.
+The following items will be used to evaluate your output. 
 
-1. Create a folder in your ENVS543 repository project folder (you are opening RStudio in a project, right?), entitled `Markdown` and put these new documents in this folder.  At the end of this activity, you will push your changes up to your GitHub repository and we will configure it to provide the pages as HTML output, hosted on GitHub.    
+1. Create a folder in your ENVS543 RStudio project (you are opening RStudio in a project, right?), entitled Markdown.  
 
-2.  Create a Markdown Resume (or *Curriculum Vitae*) for yourself. There are a ton of resources available to you for htis task. I would start with a general overview of the features necessary for producing a STEM resume. Here is a [page and accompanying video](https://www.indeed.com/career-advice/resumes-cover-letters/stem-resume) from `Indeed`. 
+2. Create a Markdown Resume (or Curriculum Vitae) for yourself in this folder. There are a ton of resources available to you for this task. I would start with a general overview of the features necessary for producing a STEM resume. Here is a page and accompanying video from Indeed.  Try to incorporate appropriate formatting as if you were going to link this to your LinkedIn profile.
 
-3. Create a simple Quarto presentation with a handful of slides, where *handful* is interpreted as at least 5, that describes, in some fashion, your interstes in Environmental Studies.  Try to put at least one multimedia object on the presentation.  
-
-
-
+3. Render this as either HTML or DOCX and upload it for submission.
