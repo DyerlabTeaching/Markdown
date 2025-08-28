@@ -1,0 +1,15 @@
+---
+title: "Teaching Log"
+---
+
+## Fall Semester 2025
+
+### Population Genetics
+
+-   9-26: Finished up and assigned the homework.
+
+### Data Literacy
+
+-   9-26: Got through the point of having them make a markdown document ending [here](https://dyerlabteaching.github.io/Markdown/slides.html#/your-turn).
+
+-   9-28: Finished up Markdown lecture and did in-class "homework" components.

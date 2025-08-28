@@ -33,6 +33,12 @@ There is a single task—you will use Markdown to craft a resume for yourself.
 
 - The [homework](https://dyerlabteaching.github.io/Markdown/homework.html) describing crafting a Markdown version of your resume.
 
+
+## Logistics
+
+- A [Teaching Log](https://dyerlabteaching.github.io/Markdown/TeachingLog.html) for deployments with notes and other items.
+
+
 ## Contact Information
 
 If you need to contact me:    
