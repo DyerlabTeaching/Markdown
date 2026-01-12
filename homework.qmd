@@ -31,7 +31,7 @@ Here are the instructions for this homework exercise.  It will be an Assignment 
 
 The following items will be used to evaluate your output. 
 
-1. Create a folder in your ENVS543 RStudio project (you are opening RStudio in a project, right?), entitled Markdown.  
+1. Create a folder in your ENVS543 Folder named `Markdown`.
 
 2. Create a Markdown Resume (or Curriculum Vitae) for yourself in this folder. There are a ton of resources available to you for this task. I would start with a general overview of the features necessary for producing a STEM resume. Here is a page and accompanying video from Indeed.  Try to incorporate appropriate formatting as if you were going to link this to your LinkedIn profile.
 
