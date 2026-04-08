@@ -1,27 +1,8 @@
 project:
   title: "Markdown"
   output-dir: docs
+  pre-render: _extensions/dyerlab/update-extension.sh
 
 format:
-  html:
-    toc: true
-    toc-title: Contents
-    toc-location: right
-    html-math-method: katex
-    self-contained: true
-    code-fold: true
-    code-overflow: wrap
-    code-summary: Show the code
-    code-block-border-left: "#31BAE9"
-    citations-hover: true
-    footnotes-hover: true
-    link-external-icon: true
-  revealjs:
-    self-contained: false
-    code-fold: false
-    code-overflow: wrap
-    footer: "[rodneydyer.com](https://rodneydyer.com)"
-    code-block-border-left: "#31BAE9"
-  
-
-
+  dyerlab-html: default
+  dyerlab-revealjs: default
