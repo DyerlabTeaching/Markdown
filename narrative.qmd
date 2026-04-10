@@ -310,21 +310,3 @@ Notice the following parts:
 You will never have to change numerical values in your text that are derived from statistical analyses again since you can link the variables (and associated values) in your `R` code to be displayed in the text *as if* you typed them yourself.  If your analysis changes... your text is changed.  Magically.
 :::
 
-
-
-
-
-
-
-
-## Tables & Figures
-
-
-
-## Margin Content
-
-
-
-
-
-
