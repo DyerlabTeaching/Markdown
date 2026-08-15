@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,7 +68,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="narrative_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="narrative_files/libs/quarto-html/anchor.min.js"></script>
 <link href="narrative_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="narrative_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="narrative_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="narrative_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="narrative_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="narrative_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -134,7 +134,7 @@ window.Quarto = {
 <p><img src="media/RRC_Boat_House_From_Water.jpg" class="rounded img-fluid"></p>
 <iframe src="https://dyerlabteaching.github.io/Markdown/slides_classic.html#/title-slide"></iframe>
 <blockquote class="blockquote">
-<p>Markdown &amp; Quarto provide interactive documents for more effective data communication, tight linking between the raw data, your analyses, and your interpreation of the results, and a more effecient way to increase the reproducibaility of your work—the closer we keep our data, analyses, inferences, and interpretations, the more reliable our research becomes.</p>
+<p>Markdown &amp; Quarto provide interactive documents for more effective data communication, tight linking between the raw data, your analyses, and your interpretation of the results, and a more efficient way to increase the reproducibility of your work—the closer we keep our data, analyses, inferences, and interpretations, the more reliable our research becomes.</p>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -155,7 +155,7 @@ window.Quarto = {
 <figcaption>Conversion Formats</figcaption>
 </figure>
 </div>
-<p>This is critical for us because Code is just text. Once it is evaluated, it can replaced with:</p>
+<p>This is critical for us because Code is just text. Once it is evaluated, it can be replaced with:</p>
 <ul>
 <li>Numerical values from one or more calculations,</li>
 <li>Textual content from analyses or manipulation, or</li>
@@ -166,7 +166,7 @@ window.Quarto = {
 <section id="installing-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="installing-quarto">Installing Quarto</h2>
 <p>The first step is to go to <a href="https://quarto.org">quarto</a> and download the quarto engine for your particular computer. If you are using <a href="https://positron.posit.co">Positron</a> as your IDE, it does come stock with a version of quarto already.</p>
-<p>Quarto will serve as your interface between the text, code, analyses, graphics, tables, citations, and other items in your data analysis workflow. When we start on a analysis that has some kind of graphical output (tabular or charts or maps), more often than not, you’ll be creating a Quarto Document. In fact, this entire book is written as a sequence of Quarto Documents (as is the website it is being hosted from).</p>
+<p>Quarto will serve as your interface between the text, code, analyses, graphics, tables, citations, and other items in your data analysis workflow. When we start on an analysis that has some kind of graphical output (tabular or charts or maps), more often than not, you’ll be creating a Quarto Document. In fact, this entire book is written as a sequence of Quarto Documents (as is the website it is being hosted from).</p>
 <p>Quarto is your friend.</p>
 </section>
 <section id="markdown-document" class="level2">
@@ -180,7 +180,7 @@ window.Quarto = {
 <li>It <em>must</em> be enclosed by three dashes (and only three dashes) on their own line.</li>
 <li>Items are added as <code>key: value</code> and if it is textual content, enclose it in quotes.</li>
 </ol>
-<p>Here is a YAML from a reserach manuscript I’m working on so you can see the extra stuff that can be added.</p>
+<p>Here is a YAML from a research manuscript I’m working on so you can see the extra stuff that can be added.</p>
 <pre>‐‐‐
 title: |
 &nbsp;Directional Gene Flow: Uncovering Directionality
@@ -209,21 +209,21 @@ bibliography: export.bib
 funding: |
 &nbsp;&nbsp;&nbsp;The author received no specific funding for this work.
 abstract: |
-&nbsp;&nbsp;&nbsp;This manuscript develops a novel approch to estimating 
-&nbsp;&nbsp;&nbsp;relative directionality in genetic connetivity using a 
+&nbsp;&nbsp;&nbsp;This manuscript develops a novel approach to estimating
+&nbsp;&nbsp;&nbsp;relative directionality in genetic connectivity using a
 &nbsp;&nbsp;&nbsp;Gaussian kernel approach. Stochastic individual-based 
 &nbsp;&nbsp;&nbsp;simulation models are used to determine the sensitivity 
 &nbsp;&nbsp;&nbsp;of this approach to identify asymmetry in gene flow amongst
 &nbsp;&nbsp;&nbsp;a set of discrete populations showing...  The methodology
 &nbsp;&nbsp;&nbsp;is applied to two case studies, one evaluating the 
-&nbsp;&nbsp;&nbsp;distribution of genetic variance among spatially separated 
-&nbsp;&nbsp;&nbsp;populations of X and another is applied to an analysis of 
-&nbsp;&nbsp;&nbsp;pollen pool structure. Extensions of this model to answer 
+&nbsp;&nbsp;&nbsp;distribution of genetic variance among spatially separated
+&nbsp;&nbsp;&nbsp;<mark>populations of X and another is applied to an analysis of</mark>
+&nbsp;&nbsp;&nbsp;pollen pool structure. Extensions of this model to answer
 &nbsp;&nbsp;&nbsp;questions in landscape and conservation genetics are 
 &nbsp;&nbsp;&nbsp;discussed at the end.
 ‐‐‐
 </pre>
-<p>Notice for some things, you may need to have a list of responses and they are indented underneath the main key. See the <a href="https://quarto.org">documentation</a>. Also, for long lines, you can use the pipe character (<code>|</code>) right after the key and then indent one or more lines of text underneath—I did this here for the title, keywords, fundin, and abstract so it all displayed properly on the page without needing to scroll left/right to see it all. It is not needed in your document unless you like it to not run off the side of your editor. For specifics—for most documents, you’ll only need <code>title</code>, <code>name</code>, and <code>format</code>.</p>
+<p>Notice for some things, you may need to have a list of responses and they are indented underneath the main key. See the <a href="https://quarto.org">documentation</a>. Also, for long lines, you can use the pipe character (<code>|</code>) right after the key and then indent one or more lines of text underneath—I did this here for the title, keywords, funding, and abstract so it all displayed properly on the page without needing to scroll left/right to see it all. It is not needed in your document unless you like it to not run off the side of your editor. For specifics—for most documents, you’ll only need <code>title</code>, <code>name</code>, and <code>format</code>.</p>
 <p>After the YAML part, this is where your text and code goes that will be rendered and turned into the finalized document.</p>
 </section>
 <section id="markdown-syntax" class="level2">
@@ -244,7 +244,7 @@ abstract: |
 <li>Pictures and links</li>
 <li>Page numbers, tables of contents, etc.</li>
 </ul>
-<p>What Markdown does is allows you to type these components and use ‘marking’ around the elements to make them different from regular text. It is really, amazingly simple.</p>
+<p>What Markdown does is allow you to type these components and use ‘marking’ around the elements to make them different from regular text. It is really, amazingly simple.</p>
 <section id="headings" class="level3">
 <h3 class="anchored" data-anchor-id="headings">Headings</h3>
 <p>Title and headers are created by prepending a hashtag</p>
@@ -267,7 +267,7 @@ Figure&nbsp;1: Example heading formats based on the styles used in this document
 <section id="text-styles" class="level3">
 <h3 class="anchored" data-anchor-id="text-styles">Text Styles</h3>
 <p>The actual appearance of the headers are determined by where it is being presented (e.g., in Word it will take the default typography and font attributes, etc.). You are more than welcome to customize these settings using style sheets in a variety of formats (see <a href="https://quarto.org/docs/extensions/formats.html">documentation</a>).</p>
-<p>Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence. I find it much easier to just put the</p>
+<p>Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence. <mark>I find it much easier to just put the</mark></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -292,16 +292,12 @@ Figure&nbsp;1: Example heading formats based on the styles used in this document
 <td>~~strike through~~</td>
 <td><del>strike through</del></td>
 </tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table>
 </section>
 <section id="embedded-content" class="level3">
 <h3 class="anchored" data-anchor-id="embedded-content">Embedded Content</h3>
-<p>You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it <em>must</em> be surrounded in <em>square brackets</em>. The link to the web or file or image is right next to the square brackets and is contained within <em>parentheses</em>. So the markdown.</p>
+<p>You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it <em>must</em> be surrounded in <em>square brackets</em>. The link to the web or file or image is right next to the square brackets and is contained within <em>parentheses</em>. So the markdown:</p>
 <p>[rodneydyer.com](https://rodneydyer.com)</p>
 <p>becomes (when rendered)</p>
 <p><a href="https://rodneydyer.com">rodneydyer.com</a></p>
@@ -341,21 +337,21 @@ Figure&nbsp;1: Example heading formats based on the styles used in this document
 <p>Actually, you <em>can</em> just use <code>1.</code> in front of every line if you like, it will auto-number them for you when it makes a list. I tend to do this because it makes it a bit easier in case I want to reorder the list later and I don’t have to go back and change the numbers.</p>
 </section>
 <section id="footnotes" class="level3">
-<h3 class="anchored" data-anchor-id="footnotes">FootNotes</h3>
-<p>You can add a footnote using two components. First, you need to insert the location where you want the footnote to annotate. You do this by enclosing square brackets and a carat symbol (^) where you want to put the footnote in the text and an identifier number (e.g., [^1]). This will designate a link in the text that will allow you to jumpt to the bottom of the page.</p>
+<h3 class="anchored" data-anchor-id="footnotes">Footnotes</h3>
+<p>You can add a footnote using two components. First, you need to insert the location where you want the footnote to annotate. You do this by enclosing square brackets and a carat symbol (^) where you want to put the footnote in the text and an identifier number (e.g., [^1]). This will designate a link in the text that will allow you to jump to the bottom of the page.</p>
 <p>The next part, the text or content you are going to display needs to be indicated as well. This can be right after the identifying item or at the very end of the text itself. I typically localize the text content near where the superscript is located so they are linked. To indicate to Quarto that this is to be rendered as a footnote, you use the same number that you used for the superscript and enclose it in square brackets and a carat, <em>followed by a colon</em>.</p>
-<p>[^1]:. This is the content of the footnote I made above.</p>
+<p>[^1]: This is the content of the footnote I made above.</p>
 <p>This will set up the content that is put into the end of the page (and provide a link back to the location in the document that you jumped from).</p>
 <p>Here is an example<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 </section>
 </section>
 <section id="code-text" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="code-text">Code &amp; Text</h2>
-<p>On of the strengths of Quarto and its integration of <code>R</code> and markdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses <em>and</em> data as close to one another as possible, helping with reproducibility and error reduction. You do not have to do your analysis in one program, copy-and-paste the results to your word processor, then copy and paste to your presentation software, then go to your graphics program and make a figure and copy-and-paste it togehter, etc. It all lives in one place.</p>
+<p>One of the strengths of Quarto and its integration of <code>R</code> and markdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses <em>and</em> data as close to one another as possible, helping with reproducibility and error reduction. You do not have to do your analysis in one program, copy-and-paste the results to your word processor, then copy and paste to your presentation software, then go to your graphics program and make a figure and copy-and-paste it together, etc. It all lives in one place.</p>
 <section id="code-chunks" class="level3">
 <h3 class="anchored" data-anchor-id="code-chunks">Code Chunks</h3>
 <p>Quarto supports <em>code chunks</em> (or <em>code cells</em> in Positron), which can be one or many lines of raw <code>R</code> code. This code is executed and the results are merged into the markdown in the document (text, graphical, interactive widgets, whatever) before knitting. You can think of this as a little bit of an R script that you can insert into your document.</p>
-<p>Each chunk is enclosed within boundary rows, the top row <strong>must</strong> contain three acute accents (back ticks - `) followed by the letter r in curly brackets ```{r}. This back tick is the grave (`) character and <strong>not a single quote</strong> (on the US English keyboard it is the key in the top left corner).</p>
+<p>Each chunk is enclosed within boundary rows, the top row <strong>must</strong> contain three grave accents (back ticks - `) followed by the letter r in curly brackets ```{r}. This back tick is the grave (`) character and <strong>not a single quote</strong> (on the US English keyboard it is the key in the top left corner).</p>
 <p>The end of the chunk is indicated by three back ticks ``` on their own line. Everything between these two enclosing lines is treated as <code>R</code> code and is subject to evaluation when you re-knit the document.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -367,7 +363,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you mess up the leading and trailing lines of a chunck, the rendering process will get totally hosed in both the IDE (it does not know what to style as text versus code parts) and the rendering (same reasons).</p>
+<p>If you mess up the leading and trailing lines of a chunk, the rendering process will get totally hosed in both the IDE (it does not know what to style as text versus code parts) and the rendering (same reasons).</p>
 </div>
 </div>
 <p>Here is what a chunk looks like in markdown that prints out a simple message.</p>
@@ -385,7 +381,7 @@ print("This is text from a chunk")
 <p>Notice, the output from the chunk is shown in the line <code>[1]</code> right after the chunk. Anything you print or show in a chunk will be displayed directly below the chunk itself.</p>
 <section id="chunk-options" class="level4">
 <h4 class="anchored" data-anchor-id="chunk-options">Chunk Options</h4>
-<p>There are several options we can apply to a chunk. These can be set at the top of the document, in the YAML, which will impact all the chuncks in the document, or on a per-chunk basis. Here some options you will commonly use.</p>
+<p>There are several options we can apply to a chunk. These can be set at the top of the document, in the YAML, which will impact all the chunks in the document, or on a per-chunk basis. Here some options you will commonly use.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -416,7 +412,7 @@ print("This is text from a chunk")
 </tr>
 </tbody>
 </table>
-<p>To put these in an individual chunk, place them <em>at the top of the chunk</em> (this is important, they should be the first lines of text) preceded by <code>#|</code>. For example, the following chunk will show its contentws, not evaluate the code, and suppress any warnings or errors when it does execute.</p>
+<p>To put these in an individual chunk, place them <em>at the top of the chunk</em> (this is important, they should be the first lines of text) preceded by <code>#|</code>. For example, the following chunk will show its contents, not evaluate the code, and suppress any warnings or errors when it does execute.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100000000000000</span>) { </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="st">"hello world!"</span>)</span>
@@ -426,7 +422,7 @@ print("This is text from a chunk")
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressPackageStartupMessages</span>( <span class="fu">library</span>( tidyverse ) ) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>In my workflow, I typically develop the document with all my chunks showing</p>
+<p>In my workflow, I typically develop the document with all my chunks showing.</p>
 </section>
 </section>
 <section id="inline-code" class="level3 page-columns page-full">
@@ -441,9 +437,9 @@ Type that into the console and it will return 3.1415927.</code></pre>
 <ul>
 <li>Symbols: The <span class="math inline">\(\pi\)</span> symbol is created by the name of the symbol surrounded by dollar signs. $ $. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.</li>
 <li>Text rendered as code (in typography) but not evaluated: Both the `R` and the `pi` are examples here. Nothing is evaluated, but it <em>looks</em> like code.</li>
-<li>Evaluated R Code: Any code between <code>r</code> and the ending ` will be evaluated as R code within the text. When you render/preview the document the document, it will be run and the contents between these symbols and replaced the content by the output of the <code>R</code> code itself.. So, the markdown <tt>`r pi`</tt> will be replaced in the text as 3.1415927 as if you actually wrote out the digits of <span class="math inline">\(pi\)</span>.</li>
+<li>Evaluated R Code: Any code between <code>r</code> and the ending ` will be evaluated as R code within the text. <mark>When you render/preview the document, it will be run and the contents between these symbols and replaced the content by the output of the <code>R</code> code itself.</mark> So, the markdown <tt>`r pi`</tt> will be replaced in the text as 3.1415927 as if you actually wrote out the digits of <span class="math inline">\(pi\)</span>.</li>
 </ul>
-<div class="no-row-height column-margin column-container"><span class="margin-aside">This is HUGE! Think of this as how you will <strong>never</strong> have to update numerical values in your manuscripts again if they come from your anlayses.</span></div><div class="callout callout-style-default callout-tip callout-titled">
+<div class="no-row-height column-margin column-container"><span class="margin-aside">This is HUGE! Think of this as how you will <strong>never</strong> have to update numerical values in your manuscripts again if they come from your analyses.</span></div><div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>

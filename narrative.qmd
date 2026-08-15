@@ -11,7 +11,7 @@ format: html
 <iframe src="https://dyerlabteaching.github.io/Markdown/slides_classic.html#/title-slide"></iframe>
 ```
 
-> Markdown & Quarto provide interactive documents for more effective data communication, tight linking between the raw data, your analyses, and your interpreation of the results, and a more effecient way to increase the reproducibaility of your work—the closer we keep our data, analyses, inferences, and interpretations, the more reliable our research becomes.
+> Markdown & Quarto provide interactive documents for more effective data communication, tight linking between the raw data, your analyses, and your interpretation of the results, and a more efficient way to increase the reproducibility of your work—the closer we keep our data, analyses, inferences, and interpretations, the more reliable our research becomes.
 
 
 
@@ -31,7 +31,7 @@ Enter [Pandoc](https://pandoc.org), the universal document converter.  It is ess
 
 ![Conversion Formats](https://live.staticflickr.com/65535/50159170006_45b8ed35a0_c_d.jpg)
 
-This is critical for us because Code is just text. Once it is evaluated, it can replaced with:
+This is critical for us because Code is just text. Once it is evaluated, it can be replaced with:
 
 - Numerical values from one or more calculations,
 - Textual content from analyses or manipulation, or
@@ -43,7 +43,7 @@ As such, we can embed `R` code within raw text to create our analyses and docume
 
 The first step is to go to [quarto](https://quarto.org) and download the quarto engine for your particular computer.  If you are using [Positron](https://positron.posit.co) as your IDE, it does come stock with a version of quarto already.
 
-Quarto will serve as your interface between the text, code, analyses, graphics, tables, citations, and other items in your data analysis workflow.  When we start on a analysis that has some kind of graphical output (tabular or charts or maps), more often than not, you'll be creating a Quarto Document.  In fact, this entire book is written as a sequence of Quarto Documents (as is the website it is being hosted from).
+Quarto will serve as your interface between the text, code, analyses, graphics, tables, citations, and other items in your data analysis workflow.  When we start on an analysis that has some kind of graphical output (tabular or charts or maps), more often than not, you'll be creating a Quarto Document.  In fact, this entire book is written as a sequence of Quarto Documents (as is the website it is being hosted from).
 
 Quarto is your friend.
 
@@ -62,7 +62,7 @@ The YAML is the part at the top and contains metadata relative to the whole docu
 2. It *must* be enclosed by three dashes (and only three dashes) on their own line.
 3. Items are added as `key: value` and if it is textual content, enclose it in quotes.
 
-Here is a YAML from a reserach manuscript I'm working on so you can see the extra stuff that can be added.  
+Here is a YAML from a research manuscript I'm working on so you can see the extra stuff that can be added.  
 
 <pre>
 &dash;&dash;&dash;
@@ -93,22 +93,22 @@ bibliography: export.bib
 funding: |
 &nbsp;&nbsp;&nbsp;The author received no specific funding for this work.
 abstract: |
-&nbsp;&nbsp;&nbsp;This manuscript develops a novel approch to estimating 
-&nbsp;&nbsp;&nbsp;relative directionality in genetic connetivity using a 
+&nbsp;&nbsp;&nbsp;This manuscript develops a novel approach to estimating
+&nbsp;&nbsp;&nbsp;relative directionality in genetic connectivity using a
 &nbsp;&nbsp;&nbsp;Gaussian kernel approach. Stochastic individual-based 
 &nbsp;&nbsp;&nbsp;simulation models are used to determine the sensitivity 
 &nbsp;&nbsp;&nbsp;of this approach to identify asymmetry in gene flow amongst
 &nbsp;&nbsp;&nbsp;a set of discrete populations showing...  The methodology
 &nbsp;&nbsp;&nbsp;is applied to two case studies, one evaluating the 
-&nbsp;&nbsp;&nbsp;distribution of genetic variance among spatially separated 
-&nbsp;&nbsp;&nbsp;populations of X and another is applied to an analysis of 
-&nbsp;&nbsp;&nbsp;pollen pool structure. Extensions of this model to answer 
+&nbsp;&nbsp;&nbsp;distribution of genetic variance among spatially separated
+&nbsp;&nbsp;&nbsp;<mark>populations of X and another is applied to an analysis of</mark>
+&nbsp;&nbsp;&nbsp;pollen pool structure. Extensions of this model to answer
 &nbsp;&nbsp;&nbsp;questions in landscape and conservation genetics are 
 &nbsp;&nbsp;&nbsp;discussed at the end.
 &dash;&dash;&dash;
 </pre>
 
-Notice for some things, you may need to have a list of responses and they are indented underneath the main key.  See the [documentation](https://quarto.org). Also, for long lines, you can use the pipe character (`|`) right after the key and then indent one or more lines of text underneath—I did this here for the title, keywords, fundin, and abstract so it all displayed properly on the page without needing to scroll left/right to see it all.  It is not needed in your document unless you like it to not run off the side of your editor.  For specifics—for most documents, you'll only need `title`, `name`, and `format`.  
+Notice for some things, you may need to have a list of responses and they are indented underneath the main key.  See the [documentation](https://quarto.org). Also, for long lines, you can use the pipe character (`|`) right after the key and then indent one or more lines of text underneath—I did this here for the title, keywords, funding, and abstract so it all displayed properly on the page without needing to scroll left/right to see it all.  It is not needed in your document unless you like it to not run off the side of your editor.  For specifics—for most documents, you'll only need `title`, `name`, and `format`.  
 
 After the YAML part, this is where your text and code goes that will be rendered and turned into the finalized document.
 
@@ -131,7 +131,7 @@ When we make a document, presentation, or any other output, there are only a fin
 -   Pictures and links
 -   Page numbers, tables of contents, etc.
 
-What Markdown does is allows you to type these components and use 'marking' around the elements to make them different from regular text. It is really, amazingly simple.
+What Markdown does is allow you to type these components and use 'marking' around the elements to make them different from regular text. It is really, amazingly simple.
 
 ### Headings 
 
@@ -151,7 +151,7 @@ are converted into the following headers styles (in docx, html, pdf, etc.).
 
 The actual appearance of the headers are determined by where it is being presented (e.g., in Word it will take the default typography and font attributes, etc.).  You are more than welcome to customize these settings using style sheets in a variety of formats (see [documentation](https://quarto.org/docs/extensions/formats.html)).
 
-Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence.  I find it much easier to just put the 
+Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence.  <mark>I find it much easier to just put the</mark>
 
 | Markdown               | Rendered As        |
 |------------------------|--------------------|
@@ -159,11 +159,10 @@ Individual paragraphs are delimited by either a blank line between them or two s
 | \*italic\*             | *italic*           |
 | \*\*bold\*\*           | **bold**           |
 | \~\~strike through\~\~ | ~~strike through~~ |
-| 
 
 ### Embedded Content
 
-You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it *must* be surrounded in *square brackets*. The link to the web or file or image is right next to the square brackets and is contained within *parentheses*.  So the markdown.
+You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it *must* be surrounded in *square brackets*. The link to the web or file or image is right next to the square brackets and is contained within *parentheses*.  So the markdown:
 
 \[rodneydyer.com\](https://rodneydyer.com)
 
@@ -205,15 +204,15 @@ Will be rendered in list format as:
 
 Actually, you *can* just use `1.` in front of every line if you like, it will auto-number them for you when it makes a list. I tend to do this because it makes it a bit easier in case I want to reorder the list later and I don't have to go back and change the numbers.
 
-### FootNotes 
+### Footnotes
 
 
 
-You can add a footnote using two components.  First, you need to insert the location where you want the footnote to annotate.  You do this by enclosing square brackets and a carat symbol (\^) where you want to put the footnote in the text and an identifier number (e.g., \[\^1\]).  This will designate a link in the text that will allow you to jumpt to the bottom of the page.  
+You can add a footnote using two components.  First, you need to insert the location where you want the footnote to annotate.  You do this by enclosing square brackets and a carat symbol (\^) where you want to put the footnote in the text and an identifier number (e.g., \[\^1\]).  This will designate a link in the text that will allow you to jump to the bottom of the page.  
 
 The next part, the text or content you are going to display needs to be indicated as well.  This can be right after the identifying item or at the very end of the text itself.  I typically localize the text content near where the superscript is located so they are linked.  To indicate to Quarto that this is to be rendered as a footnote, you use the same number that you used for the superscript and enclose it in square brackets and a carat, *followed by a colon*.  
 
-\[\^1\]:. This is the content of the footnote I made above. 
+\[\^1\]: This is the content of the footnote I made above.
 
 This will set up the content that is put into the end of the page (and provide a link back to the location in the document that you jumped from).
 
@@ -224,18 +223,18 @@ Here is an example[^1].
 
 ## Code & Text
 
-On of the strengths of Quarto and its integration of `R` and markdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses *and* data as close to one another as possible, helping with reproducibility and error reduction.  You do not have to do your analysis in one program, copy-and-paste the results to your word processor, then copy and paste to your presentation software, then go to your graphics program and make a figure and copy-and-paste it togehter, etc.  It all lives in one place.
+One of the strengths of Quarto and its integration of `R` and markdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses *and* data as close to one another as possible, helping with reproducibility and error reduction.  You do not have to do your analysis in one program, copy-and-paste the results to your word processor, then copy and paste to your presentation software, then go to your graphics program and make a figure and copy-and-paste it together, etc.  It all lives in one place.
 
 ### Code Chunks
 
 Quarto supports *code chunks* (or *code cells* in Positron), which can be one or many lines of raw `R` code. This code is executed and the results are merged into the markdown in the document (text, graphical, interactive widgets, whatever) before knitting.  You can think of this as a little bit of an R script that you can insert into your document.
 
-Each chunk is enclosed within boundary rows, the top row **must** contain three acute accents (back ticks - \`) followed by the letter r in curly brackets \`\`\`{r}. This back tick is the grave (&grave;) character and **not a single quote** (on the US English keyboard it is the key in the top left corner).  
+Each chunk is enclosed within boundary rows, the top row **must** contain three grave accents (back ticks - \`) followed by the letter r in curly brackets \`\`\`{r}. This back tick is the grave (&grave;) character and **not a single quote** (on the US English keyboard it is the key in the top left corner).  
 
 The end of the chunk is indicated by three back ticks \`\`\` on their own line.   Everything between these two enclosing lines is treated as `R` code and is subject to evaluation when you re-knit the document.
 
 :::{.callout-warning}
-If you mess up the leading and trailing lines of a chunck, the rendering process will get totally hosed in both the IDE (it does not know what to style as text versus code parts) and the rendering (same reasons).  
+If you mess up the leading and trailing lines of a chunk, the rendering process will get totally hosed in both the IDE (it does not know what to style as text versus code parts) and the rendering (same reasons).  
 :::
 
 Here is what a chunk looks like in markdown that prints out a simple message.
@@ -256,7 +255,7 @@ Notice, the output from the chunk is shown in the line `[1]` right after the chu
 
 #### Chunk Options
 
-There are several options we can apply to a chunk.  These can be set at the top of the document, in the YAML, which will impact all the chuncks in the document, or on a per-chunk basis.  Here some options you will commonly use.
+There are several options we can apply to a chunk.  These can be set at the top of the document, in the YAML, which will impact all the chunks in the document, or on a per-chunk basis.  Here some options you will commonly use.
 
 | Option | Description | 
 |--------|---------------------------------------------------------------|
@@ -265,7 +264,7 @@ There are several options we can apply to a chunk.  These can be set at the top 
 | `warning` | Show any code warnings in the output (`T/F`). |
 | `error` | Show any code errors in the output (`T/F`). |
 
-To put these in an individual chunk, place them *at the top of the chunk* (this is important, they should be the first lines of text) preceded by `#| `.  For example, the following chunk will show its contentws, not evaluate the code, and suppress any warnings or errors when it does execute.
+To put these in an individual chunk, place them *at the top of the chunk* (this is important, they should be the first lines of text) preceded by `#| `.  For example, the following chunk will show its contents, not evaluate the code, and suppress any warnings or errors when it does execute.
 
 
 ```{r}
@@ -285,7 +284,7 @@ It should be noted that some libraries produce copious amounts of junk when you 
 suppressPackageStartupMessages( library( tidyverse ) ) 
 ```
 
-In my workflow, I typically develop the document with all my chunks showing
+In my workflow, I typically develop the document with all my chunks showing.
 
 ### Inline Code
 
@@ -304,7 +303,7 @@ Notice the following parts:
 
 - Symbols: The $\pi$ symbol is created by the name of the symbol surrounded by dollar signs. \$ \pi \$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.
 - Text rendered as code (in typography) but not evaluated: Both the \`R\` and the \`pi\` are examples here. Nothing is evaluated, but it *looks* like code.
-- Evaluated R Code: Any code between `r` and the ending \` will be evaluated as R code within the text. When you render/preview the document the document, it will be run and the contents between these symbols and replaced the content by the output of the `R` code itself.[This is HUGE!  Think of this as how you will **never** have to update numerical values in your manuscripts again if they come from your anlayses.]{.aside}.  So, the markdown <tt>&grave;r pi&grave;</tt> will be replaced in the text as `r pi` as if you actually wrote out the digits of $pi$.
+- Evaluated R Code: Any code between `r` and the ending \` will be evaluated as R code within the text. <mark>When you render/preview the document, it will be run and the contents between these symbols and replaced the content by the output of the `R` code itself.</mark>[This is HUGE!  Think of this as how you will **never** have to update numerical values in your manuscripts again if they come from your analyses.]{.aside}  So, the markdown <tt>&grave;r pi&grave;</tt> will be replaced in the text as `r pi` as if you actually wrote out the digits of $pi$.
 
 :::{.callout-tip}
 You will never have to change numerical values in your text that are derived from statistical analyses again since you can link the variables (and associated values) in your `R` code to be displayed in the text *as if* you typed them yourself.  If your analysis changes... your text is changed.  Magically.

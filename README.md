@@ -29,9 +29,9 @@ For this topic, there are the following resources.  These should get you up-to-s
 
 ## Assessment
 
-There is a single task—you will use Markdown to craft a resume for yourself.  
+There is a single task—you will use Markdown to craft a résumé for yourself.  
 
-- The [homework](https://dyerlabteaching.github.io/Markdown/homework.html) describing crafting a Markdown version of your resume.
+- The [homework](https://dyerlabteaching.github.io/Markdown/homework.html) describing crafting a Markdown version of your résumé.
 
 
 ## Logistics
