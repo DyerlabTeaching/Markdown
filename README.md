@@ -4,7 +4,7 @@
 
 ## Impetus
 
-This learning module introduces the Markdown format as a tool for scientific writing and presentation, highlighting its role in facilitating the integration of data, analysis code, and findings communication using R and RStudio.
+This educational module presents Markdown as an essential tool for scientific writing and presentation. It emphasizes its role in seamlessly integrating data and analysis code and in effectively communicating research findings.
 
 ## Module Learning Objectives:
 
@@ -17,7 +17,7 @@ This learning module introduces the Markdown format as a tool for scientific wri
 
 ## Supporting Content
 
-For this topic, there are the following resources.  These should get you up-to-speed on using Markdown in RStudio.  
+For this topic, there are the following resources.  These should get you up-to-speed on using Markdown.  
 
 - [Slides](https://dyerlabteaching.github.io/Markdown/slides.html) describing the rationale for Markdown and how to use it in RStudio where you can mix textual content with data, code, and output.  
 - A longer [narrative](https://dyerlabteaching.github.io/Markdown/narrative.html) on the topic that goes into more depth than the slides that includes code and example output.
