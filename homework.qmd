@@ -1,4 +1,7 @@
-# Basic Markdown Homework
+---
+title: Basic Markdown Homework
+format: html
+---
 
 ![](media/RRC_Boat_House_From_Water.jpg){.rounded}
 

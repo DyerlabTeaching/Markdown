@@ -1,4 +1,8 @@
-# Markdown
+---
+title: Markdown
+format: html
+---
+
 
 ![](media/RRC_Boat_House_From_Water.jpg){.rounded}
 
@@ -82,7 +86,7 @@ abstract: |
 &nbsp;&nbsp;&nbsp;a set of discrete populations showing...  The methodology
 &nbsp;&nbsp;&nbsp;is applied to two case studies, one evaluating the 
 &nbsp;&nbsp;&nbsp;distribution of genetic variance among spatially separated
-&nbsp;&nbsp;&nbsp;<mark>populations of X and another is applied to an analysis of</mark>
+&nbsp;&nbsp;&nbsp;populations of X and another is applied to an analysis of
 &nbsp;&nbsp;&nbsp;pollen pool structure. Extensions of this model to answer
 &nbsp;&nbsp;&nbsp;questions in landscape and conservation genetics are 
 &nbsp;&nbsp;&nbsp;discussed at the end.
@@ -132,14 +136,16 @@ are converted into the following headers styles (in docx, html, pdf, etc.).
 
 The actual appearance of the headers are determined by where it is being presented (e.g., in Word it will take the default typography and font attributes, etc.).  You are more than welcome to customize these settings using style sheets in a variety of formats (see [documentation](https://quarto.org/docs/extensions/formats.html)).
 
-Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence.  <mark>I find it much easier to just put the</mark>
-
 | Markdown               | Rendered As        |
 |------------------------|--------------------|
 | plain text             | plain text         |
 | \*italic\*             | *italic*           |
 | \*\*bold\*\*           | **bold**           |
 | \~\~strike through\~\~ | ~~strike through~~ |
+
+Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence.  
+
+
 
 ### Embedded Content
 
@@ -247,6 +253,19 @@ There are several options we can apply to a chunk.  These can be set at the top 
 
 To put these in an individual chunk, place them *at the top of the chunk* (this is important, they should be the first lines of text) preceded by `#| `.  For example, the following chunk will show its contents, not evaluate the code, and suppress any warnings or errors when it does execute.
 
+<pre>
+&grave;&grave;&grave;{r}
+#| echo: true
+#| eval: false
+#| error: false
+#| warning: false
+
+for( i in 1:100000000000000) { 
+    print("hello world!")
+}
+&grave;&grave;&grave;
+</pre>
+
 
 ```{r}
 #| echo: true
@@ -284,7 +303,7 @@ Notice the following parts:
 
 - Symbols: The $\pi$ symbol is created by the name of the symbol surrounded by dollar signs. \$ \pi \$. There are a ton of symbols and equations you can use, all borrowed from LaTeX, so if you need complicated equations or symbols, this is not a problem.
 - Text rendered as code (in typography) but not evaluated: Both the \`R\` and the \`pi\` are examples here. Nothing is evaluated, but it *looks* like code.
-- Evaluated R Code: Any code between `r` and the ending \` will be evaluated as R code within the text. <mark>When you render/preview the document, it will be run and the contents between these symbols and replaced the content by the output of the `R` code itself.</mark>[This is HUGE!  Think of this as how you will **never** have to update numerical values in your manuscripts again if they come from your analyses.]{.aside}  So, the markdown <tt>&grave;r pi&grave;</tt> will be replaced in the text as `r pi` as if you actually wrote out the digits of $pi$.
+- Evaluated R Code: Any code between `r` and the ending \` will be evaluated as R code within the text. When you render/preview the document, it will be run from top to bottom and the contents between these code fences will be replaced by the content by the output of the `R` code itself.[This is HUGE!  Think of this as how you will **never** have to update numerical values in your manuscripts again if they come from your analyses.]{.aside}  So, the markdown <tt>&grave;r pi&grave;</tt> will be replaced in the text as `r pi` as if you actually wrote out the digits of $pi$. 
 
 :::{.callout-tip}
 You will never have to change numerical values in your text that are derived from statistical analyses again since you can link the variables (and associated values) in your `R` code to be displayed in the text *as if* you typed them yourself.  If your analysis changes... your text is changed.  Magically.
