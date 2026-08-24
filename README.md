@@ -6,41 +6,44 @@
 
 This educational module presents Markdown as an essential tool for scientific writing and presentation. It emphasizes its role in seamlessly integrating data and analysis code and in effectively communicating research findings.
 
-## Module Learning Objectives:
+## Module Learning Objectives
 
-**MLO 1: Markdown Document Creation**
+### Markdown Document Creation
 
->  Create professional, publication-ready documents in RStudio using Markdown and Quarto as a platform for clear, reproducible scientific communication.
+> Create professional, publication-ready documents in RStudio using Markdown and Quarto as a platform for clear, reproducible scientific communication.
 
-- *Bloom's Level:* Create
-- *Notes:* This objective frames Markdown/Quarto not as a technical gimmick, but as the medium through which scientific communication happens in the course. The résumé exercise functions as practice, while future modules deepen the communication into data-driven contexts.
+- **Bloom's Levels:** Create
+- **Reinforces:** Establishes Markdown/Quarto as the medium through which scientific communication happens for the rest of the course, not just a formatting exercise.
+- **Notes:** The résumé exercise functions as low-stakes practice; later modules deepen the same skill into data-driven narrative and in-class documents.
 
-## Supporting Content
+### Integrate Code, Data, and Narrative Text
 
-For this topic, there are the following resources.  These should get you up-to-speed on using Markdown.  
+> Learners will combine executable R code, data, and prose within a single Quarto/Markdown document to produce reproducible, publication-ready output.
 
-- [Slides](https://dyerlabteaching.github.io/Markdown/slides.html) describing the rationale for Markdown and how to use it in RStudio where you can mix textual content with data, code, and output.  
+- **Bloom's Levels:** Apply, Create
+- **Reinforces:** Sets up the literate-programming pattern (code + narrative + output) used in every later module's narrative and in-class documents.
+- **Notes:** This technical integration is what makes every subsequent assignment function as a single reproducible artifact rather than separate code and write-up files.
+
+## Content
+
+- [Slides](https://dyerlabteaching.github.io/Markdown/slides.html) describing the rationale for Markdown and how to use it in RStudio where you can mix textual content with data, code, and output.
 - A longer [narrative](https://dyerlabteaching.github.io/Markdown/narrative.html) on the topic that goes into more depth than the slides that includes code and example output.
 - A previous [Video](https://youtu.be/f50Hz92IyIQ) on Markdown and Notebooks in RStudio.
-- External resources:  
-  - A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)  
+- External resources:
+  - A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
   - A site based upon [RMarkdown](https://rmarkdown.rstudio.com/) with examples.
   - The official documentation for [Quarto](https://quarto.org/docs/guide/) (which is the main interface we will be using).
 
 ## Assessment
 
-There is a single task—you will use Markdown to craft a résumé for yourself.  
-
 - The [homework](https://dyerlabteaching.github.io/Markdown/homework.html) describing crafting a Markdown version of your résumé.
-
 
 ## Logistics
 
-- A [Teaching Log](https://dyerlabteaching.github.io/Markdown/TeachingLog.html) for deployments with notes and other items.
-
+- A [Teaching Log](https://dyerlabteaching.github.io/Markdown/log.html) for deployments with notes and other items.
 
 ## Contact Information
 
-If you need to contact me:    
- - Office: [LFSCB 322](https://earth.google.com/web/@37.54467538,-77.45441434,71.5959702a,74.61344954d,35y,0.00006882h,0t,0r)  
- - Email: [rjdyer@vcu.edu](mailto://rjdyer@vcu.edu)  
+If you need to contact me, I am available at:
+- Email: [rjdyer@vcu.edu](mailto://rjdyer@vcu.edu)
+- Web: [rodneydyer.com](https://rodneydyer.com)
