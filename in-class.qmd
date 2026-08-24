@@ -1,5 +1,5 @@
 ---
-title: "In Class Components - Markdown"
+title: "In Class Activity - Markdown"
 format: html
 ---
 

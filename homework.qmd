@@ -1,5 +1,6 @@
 ---
 title: Basic Markdown Homework
+author: "YOUR NAME HERE"
 format: html
 ---
 
