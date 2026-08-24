@@ -1,11 +1,6 @@
 ---
 title: "In Class Components - Markdown"
-format:
-  html:
-    code-tools: true
-    toc: false
-    self-contained: true
-editor: visual
+format: html
 ---
 
 ## Examples

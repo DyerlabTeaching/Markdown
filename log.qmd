@@ -1,5 +1,6 @@
 ---
 title: "Teaching Log"
+format: html
 ---
 
 ## Fall Semester 2025
