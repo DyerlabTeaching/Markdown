@@ -5,15 +5,13 @@ format: html
 
 
 ## 2026.08.27
-- ENVS543: Covered Rubric.
-
+- ENVS543: Covered Rubric, Set up 'self-contained' and deployed homework end date.
 
 ## 2026.08.25 
 - BIO516: Finished Markdown section.
 - ENVS543: Did full Markdown set of lecture content.  
     - Students were able to render both document & presentation
     - Went over the Homework, scheduled for 2026.09.01
-
 
 ## 2025.09.28 
 - ENVS 543: Finished up Markdown lecture and did in-class "homework" components.
