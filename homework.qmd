@@ -1,7 +1,10 @@
 ---
 title: Basic Markdown Homework
 author: "YOUR NAME HERE"
-format: html
+format: 
+  html:
+    self-contained: true
+    code-tools: true
 ---
 
 ![](media/RRC_Boat_House_From_Water.jpg){.rounded}
