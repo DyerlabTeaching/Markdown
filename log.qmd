@@ -3,14 +3,20 @@ title: "Teaching Log"
 format: html
 ---
 
-## Fall Semester 2025
 
-### Population Genetics
+## 2026.08.27
+- ENVS543: Covered Rubric, Set up 'self-contained' and deployed homework end date.
 
--   9-26: Finished up and assigned the homework.
+## 2026.08.25 
+- BIO516: Finished Markdown section.
+- ENVS543: Did full Markdown set of lecture content.  
+    - Students were able to render both document & presentation
+    - Went over the Homework, scheduled for 2026.09.01
 
-### Data Literacy
+## 2025.09.28 
+- ENVS 543: Finished up Markdown lecture and did in-class "homework" components.
 
--   9-26: Got through the point of having them make a markdown document ending [here](https://dyerlabteaching.github.io/Markdown/slides.html#/your-turn).
+## 2025.09.26
+- BIO516: Finished up and assigned the homework.
+- ENVS543: Got through the point of having them make a markdown document ending [here](https://dyerlabteaching.github.io/Markdown/slides.html#/your-turn).
 
--   9-28: Finished up Markdown lecture and did in-class "homework" components.
