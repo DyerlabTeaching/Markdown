@@ -2,8 +2,8 @@
 title: "Markdown"
 subtitle: "&nbsp;"
 author: Rodney Dyer, PhD
-format: 
-  revealjs:
+format:
+  dyerlab-revealjs:
     background-transition: fade
     theme: default
     chalkboard: false

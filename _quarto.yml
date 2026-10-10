@@ -2,7 +2,11 @@ project:
   title: "Markdown"
   output-dir: docs
   pre-render: _extensions/dyerlab/update-extension.sh
+  resources:
+    - media/
+    - data/
 
 format:
+  dyerlab-narrative-html: default
   dyerlab-html: default
   dyerlab-revealjs: default

@@ -1,6 +1,6 @@
 ---
 title: "In Class Activity - Markdown"
-format: html
+format: dyerlab-html
 ---
 
 ## Examples

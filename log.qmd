@@ -1,6 +1,6 @@
 ---
 title: "Teaching Log"
-format: html
+format: dyerlab-html
 ---
 
 

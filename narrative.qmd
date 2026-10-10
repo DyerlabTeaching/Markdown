@@ -1,6 +1,6 @@
 ---
 title: "Markdown"
-format: html
+format: dyerlab-narrative-html
 ---
 
 
