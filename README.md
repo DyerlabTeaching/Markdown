@@ -1,6 +1,6 @@
 # Markdown
 
-![](https://live.staticflickr.com/65535/52296244254_3443324e58_o_d.png)
+![](https://dyerlabteaching.github.io/Markdown/media/flickr_52296244254.png)
 
 ## Impetus
 

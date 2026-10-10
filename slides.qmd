@@ -23,7 +23,7 @@ title-slide-attributes:
 &nbsp;
 
 <p align="center">
-![](https://live.staticflickr.com/65535/52296244254_3443324e58_o_d.png)
+![](media/flickr_52296244254.png)
 </p>
 
 
@@ -282,10 +282,10 @@ Local references are *relative* to the markdown document.
 
 External images can be included as well by including full URL.
 
-`![Little Kitty Bro](https://www.flickr.com/photo_download.gne?id=54733336478&secret=78d5afc9a9&size=o)`
+`![Little Kitty Bro](media/little_kitty_bro.jpg)`
 
 <center>
-![Little Kitty Bro](https://www.flickr.com/photo_download.gne?id=54733336478&secret=78d5afc9a9&size=o)
+![Little Kitty Bro](media/little_kitty_bro.jpg)
 </center>
 
 :::{.fragment .fade-in}
