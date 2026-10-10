@@ -2754,95 +2754,92 @@ format:
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Basic Markdown Homework</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;YOUR NAME HERE&quot;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    self-contained: true</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/RRC_Boat_House_From_Water.jpg)</span>{.rounded}</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objectives</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>This exercise allows you to demonstrate the following skills: </span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create a professional looking Quarto document</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrate sufficient mastery to insert and present the most common typographic and multimedia components.</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add multimedia content to the document.   </span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rationale</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>A fundamental tenet in modern research is keeping the data, analyses, and output as close as possible. One way to do this in <span class="in">`R`</span> is to directly integrate the analyses and visualizations into creating the documents you produce. This may be research reports, presentations, posters, etc. The tighter the link between the document and the underlying data and analyses, the more efficient your actions are. This is why we are starting with Markdown.</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>Markdown is a method that allows you to focus on the content of your writing rather than the outward display and formatting. It is entirely in text, enabling easy versioning in a system like <span class="co">[</span><span class="ot">Git &amp; GitHub</span><span class="co">](https://github.com)</span> with robust support across many platforms. The <span class="co">[</span><span class="ot">RStudio</span><span class="co">](https://posit.co)</span> has a strong support set to allow you to develop a wide array of document types suitable for your work as a scientist. Moreover, it will enable you to embed analysis code (<span class="in">`R`</span>, <span class="in">`Python`</span>, <span class="in">`Julia`</span>, etc.) directly into the body of your document/presentation/report/webpage.</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> dyerlab-html</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/RRC_Boat_House_From_Water.jpg)</span>{.rounded}</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objectives</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>This exercise allows you to demonstrate the following skills: </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create a professional looking Quarto document</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Demonstrate sufficient mastery to insert and present the most common typographic and multimedia components.</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add multimedia content to the document.   </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Rationale</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>A fundamental tenet in modern research is keeping the data, analyses, and output as close as possible. One way to do this in <span class="in">`R`</span> is to directly integrate the analyses and visualizations into creating the documents you produce. This may be research reports, presentations, posters, etc. The tighter the link between the document and the underlying data and analyses, the more efficient your actions are. This is why we are starting with Markdown.</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>Markdown is a method that allows you to focus on the content of your writing rather than the outward display and formatting. It is entirely in text, enabling easy versioning in a system like <span class="co">[</span><span class="ot">Git &amp; GitHub</span><span class="co">](https://github.com)</span> with robust support across many platforms. The <span class="co">[</span><span class="ot">RStudio</span><span class="co">](https://posit.co)</span> has a strong support set to allow you to develop a wide array of document types suitable for your work as a scientist. Moreover, it will enable you to embed analysis code (<span class="in">`R`</span>, <span class="in">`Python`</span>, <span class="in">`Julia`</span>, etc.) directly into the body of your document/presentation/report/webpage.</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>This first step in using Markdown will focus on creating a basic document and presentation. Subsequent learning modules will introduce additional output types and increase the sophistication of the output.  This exercise is intended to have you focus on the basics first and as such, we are going to produce something that you are the worlds expert on—you!</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>This first step in using Markdown will focus on creating a basic document and presentation. Subsequent learning modules will introduce additional output types and increase the sophistication of the output.  This exercise is intended to have you focus on the basics first and as such, we are going to produce something that you are the worlds expert on—you!</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Context</span></span>
 <span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Context</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>The goal here is for you to create a stand alone document containing your resume and/or curriculum vitae.  If you do not have one of theses already, here is your opportunity to get one togehter.  If you already have one, then it is going to be even easier for you to to pull something toghter.  </span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>In reality, I am not going to be evaluating the *content* of the document, I am using this exerciese so you can have some practical experience developing a document with the most common elements in it.  So, if you&#39;d like to whip up your cat&#39;s resume, that is just as acceptable.  Try to incorporate appropriate formatting as if you were linking this to your (or your cats) <span class="co">[</span><span class="ot">LinkedIn</span><span class="co">](https://linkedin.com)</span> profile.  </span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>It needs to be able to demonstrate that you can produce a document with the following components:</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A list of some sort (publications, jobs, etc.).  </span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Headers and written text.  </span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Typography to include bold, underline, and italic.  </span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Working links to email/professional profile.  </span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>50,000 bonus points<span class="ot">[^1]</span> if you put in a profile picture.  </span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Assessment</span></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>This Assignment has an accompanying Rubric (see the link below) for you to see how your content is evaluated.  Starting here all the content you turn in for this course will be turned in using markdown.  The linked rubric has specific entries covering proper markdown formating and typesetting that covers general grammatical issues (e.g., species names should italicized) as well as ensuring proper use of markdown headers and formatting.  These are the same components no matter what kind of document you turn in.  </span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>As we will be using interactive data analytics, we will render our content to HTML instead of DOCX (can&#39;t get an interactive map interface in a word document...).  The Rubric also has the following two items relative to your YAML formatting:</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>For the machinery and imagery that you have in your document to transfer properly to me, ensure your YAML content has the <span class="in">`self-contained`</span> option, so your images and all the CSS/Javascript stuff is bundled with the HTML instead of sitting in that folder right next to it on your laptop (and no where near my computer when I&#39;m grading...)</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>It is also helpful if you insert <span class="in">`code-tools`</span> in the YAML, which embeds your original qmd file into the html, making it visible.  It inserts that <span class="in">`&lt;/&gt; code`</span> popup menu in the upper right side of the HTML (on this page as well, go pop it).  This allows me to help you out when evaluating your content because I can see the actual code &quot;behind the scenes&quot; if there are any issues.</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>Here is a reminder of how that this content is inserted into your YAML.  <span class="in">`New Quarto Document`</span> does not add these by default.</span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="in">title: Basic Markdown Homework</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="in">author: &quot;YOUR NAME HERE&quot;</span></span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="in">format: </span></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="in">  html:</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="in">    self-contained: true</span></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="in">    code-tools: true</span></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>The goal here is for you to create a stand alone document containing your resume and/or curriculum vitae.  If you do not have one of theses already, here is your opportunity to get one togehter.  If you already have one, then it is going to be even easier for you to to pull something toghter.  </span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>In reality, I am not going to be evaluating the *content* of the document, I am using this exerciese so you can have some practical experience developing a document with the most common elements in it.  So, if you&#39;d like to whip up your cat&#39;s resume, that is just as acceptable.  Try to incorporate appropriate formatting as if you were linking this to your (or your cats) <span class="co">[</span><span class="ot">LinkedIn</span><span class="co">](https://linkedin.com)</span> profile.  </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>It needs to be able to demonstrate that you can produce a document with the following components:</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A list of some sort (publications, jobs, etc.).  </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Headers and written text.  </span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Typography to include bold, underline, and italic.  </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Working links to email/professional profile.  </span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>50,000 bonus points<span class="ot">[^1]</span> if you put in a profile picture.  </span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Assessment</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>This Assignment has an accompanying Rubric (see the link below) for you to see how your content is evaluated.  Starting here all the content you turn in for this course will be turned in using markdown.  The linked rubric has specific entries covering proper markdown formating and typesetting that covers general grammatical issues (e.g., species names should italicized) as well as ensuring proper use of markdown headers and formatting.  These are the same components no matter what kind of document you turn in.  </span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>As we will be using interactive data analytics, we will render our content to HTML instead of DOCX (can&#39;t get an interactive map interface in a word document...).  The Rubric also has the following two items relative to your YAML formatting:</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>For the machinery and imagery that you have in your document to transfer properly to me, ensure your YAML content has the <span class="in">`self-contained`</span> option, so your images and all the CSS/Javascript stuff is bundled with the HTML instead of sitting in that folder right next to it on your laptop (and no where near my computer when I&#39;m grading...)</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>It is also helpful if you insert <span class="in">`code-tools`</span> in the YAML, which embeds your original qmd file into the html, making it visible.  It inserts that <span class="in">`&lt;/&gt; code`</span> popup menu in the upper right side of the HTML (on this page as well, go pop it).  This allows me to help you out when evaluating your content because I can see the actual code &quot;behind the scenes&quot; if there are any issues.</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>Here is a reminder of how that this content is inserted into your YAML.  <span class="in">`New Quarto Document`</span> does not add these by default.</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="in">title: Basic Markdown Homework</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="in">author: &quot;YOUR NAME HERE&quot;</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="in">format: </span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="in">  html:</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="in">    self-contained: true</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="in">    code-tools: true</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="in">---</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources </span></span>
 <span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources </span></span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>In addition, you may need the following resources on basic markdown formats and the Quarto document system that RStudio uses:  </span>
-<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Markdown Grammar</span><span class="co">](https://www.markdownguide.org/cheat-sheet/)</span>.  </span>
-<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">RStudio &amp; Markdown</span><span class="co">](https://rmarkdown.rstudio.com/)</span>.  </span>
-<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/docs/guide/)</span>.  </span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>In addition, you may need the following resources on basic markdown formats and the Quarto document system that RStudio uses:  </span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Markdown Grammar</span><span class="co">](https://www.markdownguide.org/cheat-sheet/)</span>.  </span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">RStudio &amp; Markdown</span><span class="co">](https://rmarkdown.rstudio.com/)</span>.  </span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/docs/guide/)</span>.  </span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>This is a slight exageration, but... I made you look at the footnote!  If you want to see how this is done in markdown, use the <span class="in">`&lt;/&gt; code`</span> popup, look at the entry with the 50,000 bounus points where I put in the footnote marker, and then look at the last line of markdown.  </span>
 <span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: </span>This is a slight exageration, but... I made you look at the footnote!  If you want to see how this is done in markdown, use the <span class="in">`&lt;/&gt; code`</span> popup, look at the entry with the 50,000 bounus points where I put in the footnote marker, and then look at the last line of markdown.  </span>
-<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: stay_curious_bonus_points!!!!!</span></span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="co"># That footnote code is right above this invisible code chunk, I put it here as a </span></span>
-<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="co"># loot chest for only the most curious.  Send me an email with the subject </span></span>
-<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;Stay Curious&quot; and I&#39;ll give you bonus points because you are an adventurer and</span></span>
-<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="co"># went and looked at the source code.  This is a super-secret thing!  Keep it under </span></span>
-<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="co"># wraps.  </span></span>
-<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="co"># For the footnote to render properly, it has to start with the square brackets, </span></span>
-<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="co"># the carat, a nubmer, the closing bracket, and a colon.  This works for one-line </span></span>
-<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="co"># footnotes, for longer ones, see the quarto docs.</span></span>
-<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: stay_curious_bonus_points!!!!!</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="co"># That footnote code is right above this invisible code chunk, I put it here as a </span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="co"># loot chest for only the most curious.  Send me an email with the subject </span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;Stay Curious&quot; and I&#39;ll give you bonus points because you are an adventurer and</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="co"># went and looked at the source code.  This is a super-secret thing!  Keep it under </span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="co"># wraps.  </span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="co"># For the footnote to render properly, it has to start with the square brackets, </span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a><span class="co"># the carat, a nubmer, the closing bracket, and a colon.  This works for one-line </span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="co"># footnotes, for longer ones, see the quarto docs.</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
