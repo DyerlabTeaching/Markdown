@@ -14,7 +14,7 @@ Enter [Pandoc](https://pandoc.org), the universal document converter.  It is ess
 
 ## Pandoc Supported Conversions
 
-![Conversion Formats](https://live.staticflickr.com/65535/50159170006_45b8ed35a0_c_d.jpg)
+![Conversion Formats](media/conversion_formats.jpg)
 
 This is critical for us because Code is just text. Once it is evaluated, it can be replaced with:
 
@@ -161,11 +161,11 @@ Images are the same except that the whole thing is prepended by an exclamation m
 
 So, 
 
-\![This is the goat.\](https://www.flickr.com/photo_download.gne?id=55027807032&secret=9a6f698983&size=o)
+\![This is the goat.\](media/goat_photo.jpg)
 
 is rendered as: 
 
-![This is the goat.](https://www.flickr.com/photo_download.gne?id=55027807032&secret=9a6f698983&size=o)
+![This is the goat.](media/goat_photo.jpg)
 
 ### Lists
 
