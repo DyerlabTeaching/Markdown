@@ -144,8 +144,38 @@ YAML (**Y**et **A**nother **M**arkdown **L**anguage) is a method of setting meta
 
 - It is *delimited* by three dashes, one set above and one below the content.
 
-- Can be set for all files in a project (see file `_quarto.yml` in [this repository](https://github.com/dyerlabteaching/markdown)) to standardize meta data for all instances of a document type (e.g., all PDF's have this them, all DOCX have a TOC, etc.).
+- Can be set for all files in a project (in a file named `_quarto.yml`, see next slide) to standardize meta data for all instances of a document type (e.g., all PDF's use this theme, all DOCX have a TOC, etc.).
 :::
+
+## Project-Wide YAML
+
+The `_quarto.yml` file for this module (before I switched it to my own formats) set options for every HTML page and every slide deck at once.
+
+<pre>
+project:
+  title: "Markdown"
+  output-dir: docs
+
+format:
+  html:
+    toc: true
+    toc-title: Contents
+    toc-location: right
+    html-math-method: katex
+    code-fold: true
+    code-overflow: wrap
+    code-summary: Show the code
+    code-block-border-left: "#31BAE9"
+    citations-hover: true
+    footnotes-hover: true
+    link-external-icon: true
+    date-format: iso
+  revealjs:
+    self-contained: false
+    code-overflow: wrap
+    code-block-border-left: "#31BAE9"
+    footer: "[Dyerlab](https://dyerlab.org)"
+</pre>
 
 
 ## YAML Singleton Grammar
