@@ -1,0 +1,19 @@
+title: "Markdown"
+repo: Markdown
+image:
+  file: media/module_image.jpg
+  alt: "A closeup of a dogwood blossom with a small dogwood beetle."
+epigraph: >-
+  Markdown & Quarto provide interactive documents for more effective
+  data communication, tight linking between the raw data, your analyses,
+  and your interpretation of the results, and a more efficient way to
+  increase the reproducibility of your work—the closer we keep our data,
+  analyses, inferences, and interpretations, the more reliable our
+  research becomes.
+resources:
+  - "A previous [Video](https://youtu.be/f50Hz92IyIQ) on Markdown and Notebooks in RStudio."
+  - |-
+    External resources:
+      - A basic [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+      - A site based upon [RMarkdown](https://rmarkdown.rstudio.com/) with examples.
+      - The official documentation for [Quarto](https://quarto.org/docs/guide/) (which is the main interface we will be using).

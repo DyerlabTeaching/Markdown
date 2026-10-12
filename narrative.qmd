@@ -3,10 +3,13 @@ title: "Markdown"
 format: dyerlab-narrative-html
 ---
 
+<!-- BEGIN module:header — generated from module.yml; edit that, not this -->
 
-![](media/RRC_Boat_House_From_Water.jpg){.rounded}
+![](media/module_image.jpg){fig-alt="A closeup of a dogwood blossom with a small dogwood beetle."}
 
 > Markdown & Quarto provide interactive documents for more effective data communication, tight linking between the raw data, your analyses, and your interpretation of the results, and a more efficient way to increase the reproducibility of your work—the closer we keep our data, analyses, inferences, and interpretations, the more reliable our research becomes.
+
+<!-- END module:header -->
 
 In current data analytics and communication, there are a wide variety of platforms on which we can provide summaries and insights regarding our work. Each of these end points requires a non-insignificant amount of effort to learn these systems. Moreover, they all are *cul de sacs* in that all the effort you exert to learn one will not allow you to get the benefits of any other platform than the one you just learned.
 
@@ -146,7 +149,6 @@ The actual appearance of the headers are determined by where it is being present
 Individual paragraphs are delimited by either a blank line between them or two spaces at the end of the sentence.  
 
 
-
 ### Embedded Content
 
 You can also embed links and images. Both of these are configured in two parts. For links, you need to specify the text that can be clicked upon and it *must* be surrounded in *square brackets*. The link to the web or file or image is right next to the square brackets and is contained within *parentheses*.  So the markdown:
@@ -192,7 +194,6 @@ Will be rendered in list format as:
 Actually, you *can* just use `1.` in front of every line if you like, it will auto-number them for you when it makes a list. I tend to do this because it makes it a bit easier in case I want to reorder the list later and I don't have to go back and change the numbers.
 
 ### Footnotes
-
 
 
 You can add a footnote using two components.  First, you need to insert the location where you want the footnote to annotate.  You do this by enclosing square brackets and a carat symbol (\^) where you want to put the footnote in the text and an identifier number (e.g., \[\^1\]).  This will designate a link in the text that will allow you to jump to the bottom of the page.  
