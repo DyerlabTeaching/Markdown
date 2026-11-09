@@ -139,8 +139,8 @@ window.Quarto = {
 <!-- END module:header -->
 <p>In current data analytics and communication, there are a wide variety of platforms on which we can provide summaries and insights regarding our work. Each of these end points requires a non-insignificant amount of effort to learn these systems. Moreover, they all are <em>cul de sacs</em> in that all the effort you exert to learn one will not allow you to get the benefits of any other platform than the one you just learned.</p>
 <p>Enter <a href="https://pandoc.org">Pandoc</a>, the universal document converter. It is essentially the <em>Rosetta Stone</em> of file types. Some really smart programmers have put together a set of software that allows you to convert from or to (and hence between) different document types given that most documents are regularly structured. With Pandoc, it does not matter if you do or do not have Word or PowerPoint or EPub or LaTeX or whatever, as long as you can create one of the supported types, you can convert that input into a huge variety of output types.</p>
-<section id="pandoc-supported-conversions" class="level2">
-<h2 class="anchored" data-anchor-id="pandoc-supported-conversions">Pandoc Supported Conversions</h2>
+<section id="pandoc-supported-conversions" class="level2 application">
+<h2 class="application anchored" data-anchor-id="pandoc-supported-conversions">Pandoc Supported Conversions</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="media/conversion_formats.jpg" class="img-fluid figure-img"></p>
@@ -155,14 +155,14 @@ window.Quarto = {
 </ul>
 <p>As such, we can embed <code>R</code> code within raw text to create our analyses and documents.</p>
 </section>
-<section id="installing-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="installing-quarto">Installing Quarto</h2>
+<section id="installing-quarto" class="level2 application">
+<h2 class="application anchored" data-anchor-id="installing-quarto">Installing Quarto</h2>
 <p>The first step is to go to <a href="https://quarto.org">quarto</a> and download the quarto engine for your particular computer. If you are using <a href="https://positron.posit.co">Positron</a> as your IDE, it does come stock with a version of quarto already.</p>
 <p>Quarto will serve as your interface between the text, code, analyses, graphics, tables, citations, and other items in your data analysis workflow. When we start on an analysis that has some kind of graphical output (tabular or charts or maps), more often than not, you’ll be creating a Quarto Document. In fact, this entire book is written as a sequence of Quarto Documents (as is the website it is being hosted from).</p>
 <p>Quarto is your friend.</p>
 </section>
-<section id="markdown-document" class="level2">
-<h2 class="anchored" data-anchor-id="markdown-document">Markdown Document</h2>
+<section id="markdown-document" class="level2 application">
+<h2 class="application anchored" data-anchor-id="markdown-document">Markdown Document</h2>
 <p>A quarto document is simply a text file. Since it is text, it is easily shared and <em>future proofed</em> against vendor lock-in and other problems. It is also a great candidate for using version control (like <a href="https://github.com/">GitHub</a> and similar repositories for collaboration).</p>
 <p>A document has two parts: the meta data (known as the YAML), and the body.</p>
 <p><img src="./media/quarto_doc.png" class="img-fluid"></p>
@@ -218,8 +218,8 @@ abstract: |
 <p>Notice for some things, you may need to have a list of responses and they are indented underneath the main key. See the <a href="https://quarto.org">documentation</a>. Also, for long lines, you can use the pipe character (<code>|</code>) right after the key and then indent one or more lines of text underneath—I did this here for the title, keywords, funding, and abstract so it all displayed properly on the page without needing to scroll left/right to see it all. It is not needed in your document unless you like it to not run off the side of your editor. For specifics—for most documents, you’ll only need <code>title</code>, <code>name</code>, and <code>format</code>.</p>
 <p>After the YAML part, this is where your text and code goes that will be rendered and turned into the finalized document.</p>
 </section>
-<section id="markdown-syntax" class="level2">
-<h2 class="anchored" data-anchor-id="markdown-syntax">Markdown Syntax</h2>
+<section id="markdown-syntax" class="level2 application">
+<h2 class="application anchored" data-anchor-id="markdown-syntax">Markdown Syntax</h2>
 <p>For maximum usability, the document that we embed our code into should be as widely available as possible—unhindered by the necessity of having a particular program just to view the content. For this, R uses <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, created by John Gruber &amp; Aaron Swartz in 2004. Markdown was created so that people are enabled “…to write using an easy-to-read and easy-to-write plain text format…”</p>
 <p>Because everything is text, it is easy share and collaborate using Markdown, and for <code>R</code>, it is how we can make a wide array of output document types including (but not limited to):</p>
 <ul>
@@ -337,8 +337,8 @@ Figure&nbsp;1: Example heading formats based on the styles used in this document
 <p>Here is an example<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 </section>
 </section>
-<section id="code-text" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="code-text">Code &amp; Text</h2>
+<section id="code-text" class="level2 application page-columns page-full">
+<h2 class="application anchored" data-anchor-id="code-text">Code &amp; Text</h2>
 <p>One of the strengths of Quarto and its integration of <code>R</code> and markdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses <em>and</em> data as close to one another as possible, helping with reproducibility and error reduction. You do not have to do your analysis in one program, copy-and-paste the results to your word processor, then copy and paste to your presentation software, then go to your graphics program and make a figure and copy-and-paste it together, etc. It all lives in one place.</p>
 <section id="code-chunks" class="level3">
 <h3 class="anchored" data-anchor-id="code-chunks">Code Chunks</h3>
