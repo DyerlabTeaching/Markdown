@@ -15,7 +15,7 @@ In current data analytics and communication, there are a wide variety of platfor
 
 Enter [Pandoc](https://pandoc.org), the universal document converter.  It is essentially the *Rosetta Stone* of file types. Some really smart programmers have put together a set of software that allows you to convert from or to (and hence between) different document types given that most documents are regularly structured. With Pandoc, it does not matter if you do or do not have Word or PowerPoint or EPub or LaTeX or whatever, as long as you can create one of the supported types, you can convert that input into a huge variety of output types.
 
-## Pandoc Supported Conversions
+## Pandoc Supported Conversions {.application}
 
 ![Conversion Formats](media/conversion_formats.jpg)
 
@@ -27,7 +27,7 @@ This is critical for us because Code is just text. Once it is evaluated, it can 
 
 As such, we can embed `R` code within raw text to create our analyses and documents.
 
-## Installing Quarto
+## Installing Quarto {.application}
 
 The first step is to go to [quarto](https://quarto.org) and download the quarto engine for your particular computer.  If you are using [Positron](https://positron.posit.co) as your IDE, it does come stock with a version of quarto already.
 
@@ -36,7 +36,7 @@ Quarto will serve as your interface between the text, code, analyses, graphics, 
 Quarto is your friend.
 
 
-## Markdown Document
+## Markdown Document {.application}
 
 A quarto document is simply a text file.  Since it is text, it is easily shared and *future proofed* against vendor lock-in and other problems.  It is also a great candidate for using version control (like [GitHub](https://github.com/) and similar repositories for collaboration).  
 
@@ -100,7 +100,7 @@ Notice for some things, you may need to have a list of responses and they are in
 
 After the YAML part, this is where your text and code goes that will be rendered and turned into the finalized document.
 
-## Markdown Syntax
+## Markdown Syntax {.application}
 
 For maximum usability, the document that we embed our code into should be as widely available as possible---unhindered by the necessity of having a particular program just to view the content. For this, R uses [Markdown](https://en.wikipedia.org/wiki/Markdown), created by John Gruber & Aaron Swartz in 2004. Markdown was created so that people are enabled "...to write using an easy-to-read and easy-to-write plain text format..."
 
@@ -209,7 +209,7 @@ Here is an example[^1].
 [^1]: This is the content of the footnote I made above. 
 
 
-## Code & Text
+## Code & Text {.application}
 
 One of the strengths of Quarto and its integration of `R` and markdown is the ability to mix code and text together in one place. This allows us to bring all of our analyses *and* data as close to one another as possible, helping with reproducibility and error reduction.  You do not have to do your analysis in one program, copy-and-paste the results to your word processor, then copy and paste to your presentation software, then go to your graphics program and make a figure and copy-and-paste it together, etc.  It all lives in one place.
 
